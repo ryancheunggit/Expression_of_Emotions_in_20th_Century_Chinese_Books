@@ -1,23 +1,20 @@
----
-title: "Sentment in Cnbooks"
-author: "Ryan Cheung"
-date: "Thursday, August 07, 2014"
-output:
-  html_document:
-    keep_md: yes
----
+# Sentment in Cnbooks
+Ryan Cheung  
+Thursday, August 07, 2014  
 
-## Load in data ¶ÁÈëÊı¾İ
-```{r}
+## Load in data è¯»å…¥æ•°æ®
+
+```r
 neg <- read.table("negsentiment.txt", header = T)
 pos <- read.table("possentiment.txt", header = T)
 total <- read.table("summaryout.txt", header = T)
 ```
 
-## ¼ÆËã¸÷ÄêµÄÇé¸ĞÖµ Calculate mood scores
-### ÒÔ×Ü1gramÆµ´ÎÕıÔò»¯
+## è®¡ç®—å„å¹´çš„æƒ…æ„Ÿå€¼ Calculate mood scores
+### ä»¥æ€»1gramé¢‘æ¬¡æ­£åˆ™åŒ–
 
-```{r}
+
+```r
 freqneg <- neg[,2]/total[,3]
 freqpos <- pos[,2]/total[,3]
 sent <- freqpos - freqneg
@@ -25,25 +22,35 @@ poslm <- lm(freqpos~pos[,1])
 neglm <- lm(-freqneg~neg[,1])
 sentlm <- lm(sent~pos[,1])
 ```
-### »æÖÆÍ¼
+### ç»˜åˆ¶å›¾
 
-¸ºÃæÇé¸Ğ´Ê¸÷ÄêÆµ´Î£º
-```{r}
+è´Ÿé¢æƒ…æ„Ÿè¯å„å¹´é¢‘æ¬¡ï¼š
+
+```r
 plot(neg[,1], freqneg)
 ```
 
-ÕıÃæÇé¸Ğ´Ê¸÷ÄêÆµ´Î£º
-```{r}
+![plot of chunk unnamed-chunk-3](./analysis_files/figure-html/unnamed-chunk-3.png) 
+
+æ­£é¢æƒ…æ„Ÿè¯å„å¹´é¢‘æ¬¡ï¼š
+
+```r
 plot(pos[,1], freqpos)
 ```
 
-Çé¸ĞÖµ£¨ÕıÃæÇé¸Ğ¸÷ÄêÆµ´Î-¸ºÃæÇé¸Ğ¸÷ÄêÆµ´Î£©ËæÄê·İµÄ±ä»¯£º
-```{r}
+![plot of chunk unnamed-chunk-4](./analysis_files/figure-html/unnamed-chunk-4.png) 
+
+æƒ…æ„Ÿå€¼ï¼ˆæ­£é¢æƒ…æ„Ÿå„å¹´é¢‘æ¬¡-è´Ÿé¢æƒ…æ„Ÿå„å¹´é¢‘æ¬¡ï¼‰éšå¹´ä»½çš„å˜åŒ–ï¼š
+
+```r
 plot(pos[,1], sent)
 ```
 
-ÈıÕß·ÅÔÚÒ»ÕÅÍ¼ÉÏ£º
-```{r}
+![plot of chunk unnamed-chunk-5](./analysis_files/figure-html/unnamed-chunk-5.png) 
+
+ä¸‰è€…æ”¾åœ¨ä¸€å¼ å›¾ä¸Šï¼š
+
+```r
 plot( 1900:2000, seq(-0.01,0.01,0.02/100), type = "n") 
 points(pos[,1], sent, col = 'black', pch = 19)
 abline(poslm$coefficients[1],poslm$coefficients[2], col = 'black', lty = 2, lwd = 2)
@@ -52,4 +59,6 @@ abline(neglm$coefficients[1],neglm$coefficients[2], col = 'blue', lty = 2, lwd =
 points(pos[,1], freqpos, col = 'red', pch = 19)
 abline(sentlm$coefficients[1],sentlm$coefficients[2], col = 'red', lty = 2, lwd = 2)
 ```
+
+![plot of chunk unnamed-chunk-6](./analysis_files/figure-html/unnamed-chunk-6.png) 
 
