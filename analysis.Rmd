@@ -1,5 +1,5 @@
 ---
-title: "Sentment in Cnbooks"
+title: "Expression of Emotions in 20th Century Chinese Books"
 author: "Ryan Cheung"
 date: "Thursday, August 07, 2014"
 output:
@@ -44,7 +44,7 @@ plot(pos[,1], sent)
 
 三者放在一张图上：
 ```{r}
-plot( 1900:2000, seq(-0.01,0.01,0.02/100), type = "n") 
+plot( 1900:2000, seq(-0.01,0.01,0.02/100), type = "n", xlab = "year", ylab = "sentiment") 
 points(pos[,1], sent, col = 'black', pch = 19)
 abline(poslm$coefficients[1],poslm$coefficients[2], col = 'black', lty = 2, lwd = 2)
 points(neg[,1], -freqneg, col = 'blue', pch = 19)
