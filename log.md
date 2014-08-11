@@ -1,77 +1,77 @@
-# Expression_of_Emotions_in_20th_Century_Chinese_Books
+# Expression of Emotions in 20th Century Chinese Books
 
 
-## 1 ÏÂÔØgoogle ngramÊı¾İ¼¯ÖĞChinese 1gram²¿·Ö£¬²¢½âÑ¹   
-ÏÂÔØµØÖ·£ºhttps://storage.googleapis.com/books/ngrams/books/datasetsv2.html (http://dev.mysql.com/downloads/)    
+## 1 ä¸‹è½½google ngramæ•°æ®é›†ä¸­Chinese 1graméƒ¨åˆ†ï¼Œå¹¶è§£å‹   
+ä¸‹è½½åœ°å€ï¼šhttps://storage.googleapis.com/books/ngrams/books/datasetsv2.html       
 
-## 2 °²×°MySQL Community Server 5.6.19    
-ÏÂÔØµØÖ·£º http://dev.mysql.com/downloads/(http://dev.mysql.com/downloads/)
+## 2 å®‰è£…MySQL Community Server 5.6.19    
+ä¸‹è½½åœ°å€ï¼š http://dev.mysql.com/downloads/      
 
-## 3 ÏÂÔØÖªÍøHowNetÖĞÎÄÇé¸Ğ´Ê±í    
-ÏÂÔØµØÖ·£ºhttp://www.keenage.com/
-ÕıÃæÇé¸Ğ´Ê±í£ºcnpositiveemotionwords.txt
-¸ºÃæÇé¸Ğ´Ê±í£ºcnnegitiveemotionwords.txt
+## 3 ä¸‹è½½çŸ¥ç½‘HowNetä¸­æ–‡æƒ…æ„Ÿè¯è¡¨    
+ä¸‹è½½åœ°å€ï¼šhttp://www.keenage.com/            
+æ­£é¢æƒ…æ„Ÿè¯è¡¨ï¼šcnpositiveemotionwords.txt              
+è´Ÿé¢æƒ…æ„Ÿè¯è¡¨ï¼šcnnegitiveemotionwords.txt             
 
-## 3 ½«1gramÊı¾İµ¼ÈëÊı¾İ¿â:    
+## 3 å°†1gramæ•°æ®å¯¼å…¥æ•°æ®åº“:    
 
-### 3.1 ĞÂ½¨²¢½øÈëngramÊı¾İ¿â    
+### 3.1 æ–°å»ºå¹¶è¿›å…¥ngramæ•°æ®åº“    
 cmd> mysql -u root -p    
 sql shell> create database ngram;      
 sql shell> use ngram     
 
-### 3.2 ´´½¨±ícn1gram     
+### 3.2 åˆ›å»ºè¡¨cn1gram     
 sql shell> create table cn1gram    
-        -> ( ngram text default null,
-        ->   year int(11) default null,
-        ->   match_count int(11) default null,
-        ->   volume_count int(11) default null)
-        -> engine = innodb;    
-sql shell> \q    
+        -> ( ngram text default null,              
+        ->   year int(11) default null,              
+        ->   match_count int(11) default null,             
+        ->   volume_count int(11) default null)                
+        -> engine = innodb;            
+sql shell> \q           
 
-### 3.3 SQLÅúÁ¿µ¼ÈëÊı¾İ    
-SQLÅú´¦ÀíÎÄ¼ş£ºloaddata.txt         
+### 3.3 SQLæ‰¹é‡å¯¼å…¥æ•°æ®    
+SQLæ‰¹å¤„ç†æ–‡ä»¶ï¼šloaddata.txt         
 cmd> mysql -u root -p < "path/loaddata.txt"    
 
-## 4 SQL¼ìË÷£º¼ÆËãÒ»Ğ©ÓÃÓÚÕıÔò»¯´¦ÀíµÄÊı¾İ    
-¸÷Äê×Ü1gramÊıÁ¿
-cmd> mysql -u root -p < "path/summary.txt" > "path/summaryout.txt"    
-¸÷Äê¡°ÁË¡±ºÍ¡°µÄ¡±³öÏÖµÄÆµ´Î
-cmd> mysql -u root -p < "path/normal1query.txt" > "path/normal1.txt"  
+## 4 SQLæ£€ç´¢ï¼šè®¡ç®—ä¸€äº›ç”¨äºæ­£åˆ™åŒ–å¤„ç†çš„æ•°æ®    
+å„å¹´æ€»1gramæ•°é‡           
+cmd> mysql -u root -p < "path/summary.txt" > "path/summaryout.txt"             
+å„å¹´â€œäº†â€å’Œâ€œçš„â€å‡ºç°çš„é¢‘æ¬¡             
+cmd> mysql -u root -p < "path/normal1query.txt" > "path/normal1.txt"             
 cmd> mysql -u root -p < "path/normal2query.txt" > "path/normal2.txt"   
 
-## 5 ¼ìË÷¸÷ÄêÕıÃæºÍ¸ºÃæÇé¸Ğ´ÊÓï³öÏÖµÄÆµ´Î
+## 5 æ£€ç´¢å„å¹´æ­£é¢å’Œè´Ÿé¢æƒ…æ„Ÿè¯è¯­å‡ºç°çš„é¢‘æ¬¡
 
-### 5.1 ÓÃPythonÉú³ÉSQL¼ìË÷    
-Python´úÂë£ºquerygen.py
-Éú³ÉµÄSQLÅú´¦ÀíÎÄ¼ş£ºquerypos.txtºÍqueryneg.txt
+### 5.1 ç”¨Pythonç”ŸæˆSQLæ£€ç´¢    
+Pythonä»£ç ï¼šquerygen.py             
+ç”Ÿæˆçš„SQLæ‰¹å¤„ç†æ–‡ä»¶ï¼šquerypos.txtå’Œqueryneg.txt
 
-### 5.2 SQL¼ìË÷£ºÍ³¼ÆÃ¿Äê¸÷Çé¸Ğ´Ê³öÏÖµÄÆµ´Î    
+### 5.2 SQLæ£€ç´¢ï¼šç»Ÿè®¡æ¯å¹´å„æƒ…æ„Ÿè¯å‡ºç°çš„é¢‘æ¬¡    
 cmd> mysql -u root -p < "path/querypos.txt" > "path/pos.txt"   
 cmd> mysql -u root -p < "path/queryneg.txt" > "path/neg.txt"   
 
-### 5.3 ÓÃPythonÉÔÎ¢´¦ÀíÏÂ5.2Êä³öÎÄ¼şµÄ¸ñÊ½     
-Python´úÂë£ºprocess.py
-´¦ÀíºóÎÄ¼ş£ºposclean.txtºÍnegclean.txt
+### 5.3 ç”¨Pythonç¨å¾®å¤„ç†ä¸‹5.2è¾“å‡ºæ–‡ä»¶çš„æ ¼å¼     
+Pythonä»£ç ï¼šprocess.py                  
+å¤„ç†åæ–‡ä»¶ï¼šposclean.txtå’Œnegclean.txt
 
-## 6 ½«Çé¸Ğ´ÊÆµ´ÎÊı¾İĞ´ÈëÊı¾İ¿â
+## 6 å°†æƒ…æ„Ÿè¯é¢‘æ¬¡æ•°æ®å†™å…¥æ•°æ®åº“
 
-### 6.1 ´´½¨±ísentiment_negºÍsentiment_pos
-cmd> mysql -u root -p ngram
-sql shell> create table sentiment_neg
-        -> ( ngram text default = null,
-	->   year int(11) default = null,
-	->   match_count int(20) default = null,
-	->   volume_count int(20) default = null)
-	-> engine = innodb;
-sql shell> \q
+### 6.1 åˆ›å»ºè¡¨sentiment_negå’Œsentiment_pos
+cmd> mysql -u root -p ngram                       
+sql shell> create table sentiment_neg                    
+        -> ( ngram text default = null,                   
+	->   year int(11) default = null,                   
+	->   match_count int(20) default = null,                   
+	->   volume_count int(20) default = null)                  
+	-> engine = innodb;                  
+sql shell> \q                     
 
-### 6.2 SQLÅúÁ¿µ¼ÈëÊı¾İ
+### 6.2 SQLæ‰¹é‡å¯¼å…¥æ•°æ®
 cmd> mysql -u root -p < "path/loadsentiment.txt"
 
-## 7 ¼ÆËãÃ¿ÄêÕıÃæ¡¢¸ºÃæÇé¸Ğ´Ê·Ö±ğµÄ×ÜÆµ´Î
-cmd> mysql -u root -p < "path/negsum.txt" > "path/negsentiment.txt"
+## 7 è®¡ç®—æ¯å¹´æ­£é¢ã€è´Ÿé¢æƒ…æ„Ÿè¯åˆ†åˆ«çš„æ€»é¢‘æ¬¡
+cmd> mysql -u root -p < "path/negsum.txt" > "path/negsentiment.txt"                   
 cmd> mysql -u root -p < "path/possum.txt" > "path/possentiment.txt"
 
 
-## 8 RÖĞ»æÍ¼¡¢·ÖÎö
+## 8 Rä¸­ç»˜å›¾ã€åˆ†æ
 analysis.Rmd
