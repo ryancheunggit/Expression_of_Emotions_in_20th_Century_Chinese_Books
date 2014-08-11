@@ -1,0 +1,6 @@
+use ngram
+
+select year, sum(match_count), sum(volume_count)
+from sentiment_neg
+group by year
+order by year;

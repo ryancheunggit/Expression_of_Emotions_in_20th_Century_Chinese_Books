@@ -1,0 +1,5018 @@
+use ngram
+
+select '‡ˆ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='‡ˆ' or ngram regexp '^‡ˆ_')
+group by year
+order by year desc;
+ 
+select '‹u',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='‹u' or ngram regexp '^‹u_')
+group by year
+order by year desc;
+ 
+select '‹u¼µ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='‹u¼µ' or ngram regexp '^‹u¼µ_')
+group by year
+order by year desc;
+ 
+select 'ü',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ü' or ngram regexp '^ü_')
+group by year
+order by year desc;
+ 
+select '°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®' or ngram regexp '^°®_')
+group by year
+order by year desc;
+ 
+select '°®²»ÈÌÊÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®²»ÈÌÊÍ' or ngram regexp '^°®²»ÈÌÊÍ_')
+group by year
+order by year desc;
+ 
+select '°®²»ÊÍÊÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®²»ÊÍÊÖ' or ngram regexp '^°®²»ÊÍÊÖ_')
+group by year
+order by year desc;
+ 
+select '°®³è',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®³è' or ngram regexp '^°®³è_')
+group by year
+order by year desc;
+ 
+select '°®´÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®´÷' or ngram regexp '^°®´÷_')
+group by year
+order by year desc;
+ 
+select '°®¸§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®¸§' or ngram regexp '^°®¸§_')
+group by year
+order by year desc;
+ 
+select '°®ºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®ºÃ' or ngram regexp '^°®ºÃ_')
+group by year
+order by year desc;
+ 
+select '°®»¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®»¤' or ngram regexp '^°®»¤_')
+group by year
+order by year desc;
+ 
+select '°®Á¯',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®Á¯' or ngram regexp '^°®Á¯_')
+group by year
+order by year desc;
+ 
+select '°®Áµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®Áµ' or ngram regexp '^°®Áµ_')
+group by year
+order by year desc;
+ 
+select '°®Ä½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®Ä½' or ngram regexp '^°®Ä½_')
+group by year
+order by year desc;
+ 
+select '°®ÉÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®ÉÏ' or ngram regexp '^°®ÉÏ_')
+group by year
+order by year desc;
+ 
+select '°®Îİ¼°ÎÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®Îİ¼°ÎÚ' or ngram regexp '^°®Îİ¼°ÎÚ_')
+group by year
+order by year desc;
+ 
+select '°®Ï§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°®Ï§' or ngram regexp '^°®Ï§_')
+group by year
+order by year desc;
+ 
+select '°²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°²' or ngram regexp '^°²_')
+group by year
+order by year desc;
+ 
+select '°ºÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°ºÑï' or ngram regexp '^°ºÑï_')
+group by year
+order by year desc;
+ 
+select '°Í',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°Í' or ngram regexp '^°Í_')
+group by year
+order by year desc;
+ 
+select '°Í²»µÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°Í²»µÃ' or ngram regexp '^°Í²»µÃ_')
+group by year
+order by year desc;
+ 
+select '°ÍÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°ÍÍû' or ngram regexp '^°ÍÍû_')
+group by year
+order by year desc;
+ 
+select '°ÚºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°ÚºÃ' or ngram regexp '^°ÚºÃ_')
+group by year
+order by year desc;
+ 
+select '°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°İ' or ngram regexp '^°İ_')
+group by year
+order by year desc;
+ 
+select '°İ°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°İ°İ' or ngram regexp '^°İ°İ_')
+group by year
+order by year desc;
+ 
+select '°İ·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°İ·ş' or ngram regexp '^°İ·ş_')
+group by year
+order by year desc;
+ 
+select '°İºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°İºØ' or ngram regexp '^°İºØ_')
+group by year
+order by year desc;
+ 
+select '°İÚË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°İÚË' or ngram regexp '^°İÚË_')
+group by year
+order by year desc;
+ 
+select '°ı',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°ı' or ngram regexp '^°ı_')
+group by year
+order by year desc;
+ 
+select '°ı½±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°ı½±' or ngram regexp '^°ı½±_')
+group by year
+order by year desc;
+ 
+select '°ıÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='°ıÑï' or ngram regexp '^°ıÑï_')
+group by year
+order by year desc;
+ 
+select '±–',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='±–' or ngram regexp '^±–_')
+group by year
+order by year desc;
+ 
+select '±íÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='±íÑï' or ngram regexp '^±íÑï_')
+group by year
+order by year desc;
+ 
+select '±íÕÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='±íÕÃ' or ngram regexp '^±íÕÃ_')
+group by year
+order by year desc;
+ 
+select '²¢ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²¢ÖØ' or ngram regexp '^²¢ÖØ_')
+group by year
+order by year desc;
+ 
+select '²¹Ì¨',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²¹Ì¨' or ngram regexp '^²¹Ì¨_')
+group by year
+order by year desc;
+ 
+select '²»¿´É®Ãæ¿´·ğÃæ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²»¿´É®Ãæ¿´·ğÃæ' or ngram regexp '^²»¿´É®Ãæ¿´·ğÃæ_')
+group by year
+order by year desc;
+ 
+select '²»À¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²»À¢' or ngram regexp '^²»À¢_')
+group by year
+order by year desc;
+ 
+select '²»Ê¤ĞÀâí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²»Ê¤ĞÀâí' or ngram regexp '^²»Ê¤ĞÀâí_')
+group by year
+order by year desc;
+ 
+select '²»Ï§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²»Ï§' or ngram regexp '^²»Ï§_')
+group by year
+order by year desc;
+ 
+select '²»Ñá',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²»Ñá' or ngram regexp '^²»Ñá_')
+group by year
+order by year desc;
+ 
+select '²Ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²Ç' or ngram regexp '^²Ç_')
+group by year
+order by year desc;
+ 
+select '²ÉÄÉ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²ÉÄÉ' or ngram regexp '^²ÉÄÉ_')
+group by year
+order by year desc;
+ 
+select '²Î°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²Î°İ' or ngram regexp '^²Î°İ_')
+group by year
+order by year desc;
+ 
+select '²ÎÚË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²ÎÚË' or ngram regexp '^²ÎÚË_')
+group by year
+order by year desc;
+ 
+select '²àÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²àÖØ' or ngram regexp '^²àÖØ_')
+group by year
+order by year desc;
+ 
+select '²ö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='²ö' or ngram regexp '^²ö_')
+group by year
+order by year desc;
+ 
+select '³©¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³©¿ì' or ngram regexp '^³©¿ì_')
+group by year
+order by year desc;
+ 
+select '³ªßö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ªßö' or ngram regexp '^³ªßö_')
+group by year
+order by year desc;
+ 
+select '³«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³«' or ngram regexp '^³«_')
+group by year
+order by year desc;
+ 
+select '³¯°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³¯°İ' or ngram regexp '^³¯°İ_')
+group by year
+order by year desc;
+ 
+select '³¯Ë¼ÄºÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³¯Ë¼ÄºÏë' or ngram regexp '^³¯Ë¼ÄºÏë_')
+group by year
+order by year desc;
+ 
+select '³ÅÌ¨Ãæ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÅÌ¨Ãæ' or ngram regexp '^³ÅÌ¨Ãæ_')
+group by year
+order by year desc;
+ 
+select '³ÅÑü',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÅÑü' or ngram regexp '^³ÅÑü_')
+group by year
+order by year desc;
+ 
+select '³Æ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³Æ' or ngram regexp '^³Æ_')
+group by year
+order by year desc;
+ 
+select '³ÆµÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆµÀ' or ngram regexp '^³ÆµÀ_')
+group by year
+order by year desc;
+ 
+select '³Æ¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³Æ¿ì' or ngram regexp '^³Æ¿ì_')
+group by year
+order by year desc;
+ 
+select '³ÆÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆÉÍ' or ngram regexp '^³ÆÉÍ_')
+group by year
+order by year desc;
+ 
+select '³ÆËÌ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆËÌ' or ngram regexp '^³ÆËÌ_')
+group by year
+order by year desc;
+ 
+select '³ÆÌ¾',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆÌ¾' or ngram regexp '^³ÆÌ¾_')
+group by year
+order by year desc;
+ 
+select '³ÆÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆÏÛ' or ngram regexp '^³ÆÏÛ_')
+group by year
+order by year desc;
+ 
+select '³ÆĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆĞ»' or ngram regexp '^³ÆĞ»_')
+group by year
+order by year desc;
+ 
+select '³ÆĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆĞÄ' or ngram regexp '^³ÆĞÄ_')
+group by year
+order by year desc;
+ 
+select '³ÆĞÄÈçÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆĞÄÈçÒâ' or ngram regexp '^³ÆĞÄÈçÒâ_')
+group by year
+order by year desc;
+ 
+select '³ÆĞÄÈçÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆĞÄÈçÔ¸' or ngram regexp '^³ÆĞÄÈçÔ¸_')
+group by year
+order by year desc;
+ 
+select '³ÆĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆĞí' or ngram regexp '^³ÆĞí_')
+group by year
+order by year desc;
+ 
+select '³ÆÓş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆÓş' or ngram regexp '^³ÆÓş_')
+group by year
+order by year desc;
+ 
+select '³ÆÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆÔ¸' or ngram regexp '^³ÆÔ¸_')
+group by year
+order by year desc;
+ 
+select '³ÆÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÆÔŞ' or ngram regexp '^³ÆÔŞ_')
+group by year
+order by year desc;
+ 
+select '³Ğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³Ğ' or ngram regexp '^³Ğ_')
+group by year
+order by year desc;
+ 
+select '³ĞÃÉ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ĞÃÉ' or ngram regexp '^³ĞÃÉ_')
+group by year
+order by year desc;
+ 
+select '³ĞÇé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ĞÇé' or ngram regexp '^³ĞÇé_')
+group by year
+order by year desc;
+ 
+select '³ĞÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ĞÍû' or ngram regexp '^³ĞÍû_')
+group by year
+order by year desc;
+ 
+select '³ĞÓ¦',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ĞÓ¦' or ngram regexp '^³ĞÓ¦_')
+group by year
+order by year desc;
+ 
+select '³Ò»³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³Ò»³' or ngram regexp '^³Ò»³_')
+group by year
+order by year desc;
+ 
+select '³Ô´×',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³Ô´×' or ngram regexp '^³Ô´×_')
+group by year
+order by year desc;
+ 
+select '³Õ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³Õ' or ngram regexp '^³Õ_')
+group by year
+order by year desc;
+ 
+select '³ÕÁµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÕÁµ' or ngram regexp '^³ÕÁµ_')
+group by year
+order by year desc;
+ 
+select '³ÕÃÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÕÃÔ' or ngram regexp '^³ÕÃÔ_')
+group by year
+order by year desc;
+ 
+select '³ÕÇé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÕÇé' or ngram regexp '^³ÕÇé_')
+group by year
+order by year desc;
+ 
+select '³ÕĞÄ²»¸Ä',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÕĞÄ²»¸Ä' or ngram regexp '^³ÕĞÄ²»¸Ä_')
+group by year
+order by year desc;
+ 
+select '³ÕĞÄÍıÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÕĞÄÍıÏë' or ngram regexp '^³ÕĞÄÍıÏë_')
+group by year
+order by year desc;
+ 
+select '³ÛÄî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÛÄî' or ngram regexp '^³ÛÄî_')
+group by year
+order by year desc;
+ 
+select '³ÛË¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ÛË¼' or ngram regexp '^³ÛË¼_')
+group by year
+order by year desc;
+ 
+select '³ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ç' or ngram regexp '^³ç_')
+group by year
+order by year desc;
+ 
+select '³ç°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ç°İ' or ngram regexp '^³ç°İ_')
+group by year
+order by year desc;
+ 
+select '³ç¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ç¾´' or ngram regexp '^³ç¾´_')
+group by year
+order by year desc;
+ 
+select '³çÉĞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³çÉĞ' or ngram regexp '^³çÉĞ_')
+group by year
+order by year desc;
+ 
+select '³çÑö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³çÑö' or ngram regexp '^³çÑö_')
+group by year
+order by year desc;
+ 
+select '³è',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³è' or ngram regexp '^³è_')
+group by year
+order by year desc;
+ 
+select '³è°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³è°®' or ngram regexp '^³è°®_')
+group by year
+order by year desc;
+ 
+select '³èĞÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³èĞÒ' or ngram regexp '^³èĞÒ_')
+group by year
+order by year desc;
+ 
+select '³êĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³êĞ»' or ngram regexp '^³êĞ»_')
+group by year
+order by year desc;
+ 
+select '³ì³ùÂúÖ¾',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³ì³ùÂúÖ¾' or ngram regexp '^³ì³ùÂúÖ¾_')
+group by year
+order by year desc;
+ 
+select '³öÓ­',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='³öÓ­' or ngram regexp '^³öÓ­_')
+group by year
+order by year desc;
+ 
+select '´¹°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´¹°®' or ngram regexp '^´¹°®_')
+group by year
+order by year desc;
+ 
+select '´¹Äî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´¹Äî' or ngram regexp '^´¹Äî_')
+group by year
+order by year desc;
+ 
+select '´¹Çà',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´¹Çà' or ngram regexp '^´¹Çà_')
+group by year
+order by year desc;
+ 
+select '´¹ÏÑ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´¹ÏÑ' or ngram regexp '^´¹ÏÑ_')
+group by year
+order by year desc;
+ 
+select '´¹ÏÑÈı³ß',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´¹ÏÑÈı³ß' or ngram regexp '^´¹ÏÑÈı³ß_')
+group by year
+order by year desc;
+ 
+select '´¹ÏÑÓûµÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´¹ÏÑÓûµÎ' or ngram regexp '^´¹ÏÑÓûµÎ_')
+group by year
+order by year desc;
+ 
+select '´º·çµÃÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´º·çµÃÒâ' or ngram regexp '^´º·çµÃÒâ_')
+group by year
+order by year desc;
+ 
+select '´º·çÂúÃæ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´º·çÂúÃæ' or ngram regexp '^´º·çÂúÃæ_')
+group by year
+order by year desc;
+ 
+select '´×Òâ´ó·¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´×Òâ´ó·¢' or ngram regexp '^´×Òâ´ó·¢_')
+group by year
+order by year desc;
+ 
+select '´ëÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´ëÒâ' or ngram regexp '^´ëÒâ_')
+group by year
+order by year desc;
+ 
+select '´ğÀñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´ğÀñ' or ngram regexp '^´ğÀñ_')
+group by year
+order by year desc;
+ 
+select '´ğĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´ğĞ»' or ngram regexp '^´ğĞ»_')
+group by year
+order by year desc;
+ 
+select '´ğÓ¦',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´ğÓ¦' or ngram regexp '^´ğÓ¦_')
+group by year
+order by year desc;
+ 
+select '´òÇ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´òÇ§' or ngram regexp '^´òÇ§_')
+group by year
+order by year desc;
+ 
+select '´ó¿ìÈËĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´ó¿ìÈËĞÄ' or ngram regexp '^´ó¿ìÈËĞÄ_')
+group by year
+order by year desc;
+ 
+select '´óÏ²¹ıÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´óÏ²¹ıÍû' or ngram regexp '^´óÏ²¹ıÍû_')
+group by year
+order by year desc;
+ 
+select '´÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='´÷' or ngram regexp '^´÷_')
+group by year
+order by year desc;
+ 
+select 'µ¨¸Ò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µ¨¸Ò' or ngram regexp '^µ¨¸Ò_')
+group by year
+order by year desc;
+ 
+select 'µ¯¹ÚÏàÇì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µ¯¹ÚÏàÇì' or ngram regexp '^µ¯¹ÚÏàÇì_')
+group by year
+order by year desc;
+ 
+select 'µ±Õæ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µ±Õæ' or ngram regexp '^µ±Õæ_')
+group by year
+order by year desc;
+ 
+select 'µ±Ö®ÎŞÀ¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µ±Ö®ÎŞÀ¢' or ngram regexp '^µ±Ö®ÎŞÀ¢_')
+group by year
+order by year desc;
+ 
+select 'µ¹Ïò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µ¹Ïò' or ngram regexp '^µ¹Ïò_')
+group by year
+order by year desc;
+ 
+select 'µÀºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µÀºØ' or ngram regexp '^µÀºØ_')
+group by year
+order by year desc;
+ 
+select 'µÀĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µÀĞ»' or ngram regexp '^µÀĞ»_')
+group by year
+order by year desc;
+ 
+select 'µÃÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µÃÒâ' or ngram regexp '^µÃÒâ_')
+group by year
+order by year desc;
+ 
+select 'µÃÒâÍüĞÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µÃÒâÍüĞÎ' or ngram regexp '^µÃÒâÍüĞÎ_')
+group by year
+order by year desc;
+ 
+select 'µãÍ·',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µãÍ·' or ngram regexp '^µãÍ·_')
+group by year
+order by year desc;
+ 
+select 'µãÍ·³ÆÊÇ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µãÍ·³ÆÊÇ' or ngram regexp '^µãÍ·³ÆÊÇ_')
+group by year
+order by year desc;
+ 
+select 'µãÍ·¹şÑü',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µãÍ·¹şÑü' or ngram regexp '^µãÍ·¹şÑü_')
+group by year
+order by year desc;
+ 
+select 'µçºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µçºØ' or ngram regexp '^µçºØ_')
+group by year
+order by year desc;
+ 
+select 'µì¼À',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µì¼À' or ngram regexp '^µì¼À_')
+group by year
+order by year desc;
+ 
+select 'µõ¼À',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='µõ¼À' or ngram regexp '^µõ¼À_')
+group by year
+order by year desc;
+ 
+select '¶¢½ô',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶¢½ô' or ngram regexp '^¶¢½ô_')
+group by year
+order by year desc;
+ 
+select '¶¢×¡',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶¢×¡' or ngram regexp '^¶¢×¡_')
+group by year
+order by year desc;
+ 
+select '¶¥Àñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶¥Àñ' or ngram regexp '^¶¥Àñ_')
+group by year
+order by year desc;
+ 
+select '¶¥ÀñÄ¤°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶¥ÀñÄ¤°İ' or ngram regexp '^¶¥ÀñÄ¤°İ_')
+group by year
+order by year desc;
+ 
+select '¶¶',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶¶' or ngram regexp '^¶¶_')
+group by year
+order by year desc;
+ 
+select '¶ÃÎïË¼ÈË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶ÃÎïË¼ÈË' or ngram regexp '^¶ÃÎïË¼ÈË_')
+group by year
+order by year desc;
+ 
+select '¶Ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶Ê' or ngram regexp '^¶Ê_')
+group by year
+order by year desc;
+ 
+select '¶ÊºŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶ÊºŞ' or ngram regexp '^¶ÊºŞ_')
+group by year
+order by year desc;
+ 
+select '¶Ê»ğÖĞÉÕ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶Ê»ğÖĞÉÕ' or ngram regexp '^¶Ê»ğÖĞÉÕ_')
+group by year
+order by year desc;
+ 
+select '¶Ê¼µ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶Ê¼µ' or ngram regexp '^¶Ê¼µ_')
+group by year
+order by year desc;
+ 
+select '¶Ê¼É',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶Ê¼É' or ngram regexp '^¶Ê¼É_')
+group by year
+order by year desc;
+ 
+select '¶ÊÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶ÊÏÛ' or ngram regexp '^¶ÊÏÛ_')
+group by year
+order by year desc;
+ 
+select '¶àÁô¸öĞÄÑÛ¶ù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶àÁô¸öĞÄÑÛ¶ù' or ngram regexp '^¶àÁô¸öĞÄÑÛ¶ù_')
+group by year
+order by year desc;
+ 
+select '¶éÈë°®ºÓ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶éÈë°®ºÓ' or ngram regexp '^¶éÈë°®ºÓ_')
+group by year
+order by year desc;
+ 
+select '¶éÈëÇéÍø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶éÈëÇéÍø' or ngram regexp '^¶éÈëÇéÍø_')
+group by year
+order by year desc;
+ 
+select '¶îÊÖ³ÆÇì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¶îÊÖ³ÆÇì' or ngram regexp '^¶îÊÖ³ÆÇì_')
+group by year
+order by year desc;
+ 
+select '·´²¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·´²¸' or ngram regexp '^·´²¸_')
+group by year
+order by year desc;
+ 
+select '·Åµ¨',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·Åµ¨' or ngram regexp '^·Åµ¨_')
+group by year
+order by year desc;
+ 
+select '·ÅÔÚĞÄÉÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·ÅÔÚĞÄÉÏ' or ngram regexp '^·ÅÔÚĞÄÉÏ_')
+group by year
+order by year desc;
+ 
+select '·ÑĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·ÑĞÄ' or ngram regexp '^·ÑĞÄ_')
+group by year
+order by year desc;
+ 
+select '·âìø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·âìø' or ngram regexp '^·âìø_')
+group by year
+order by year desc;
+ 
+select '·èÄ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·èÄ§' or ngram regexp '^·èÄ§_')
+group by year
+order by year desc;
+ 
+select '·î',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·î' or ngram regexp '^·î_')
+group by year
+order by year desc;
+ 
+select '·îÈôÉñÃ÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·îÈôÉñÃ÷' or ngram regexp '^·îÈôÉñÃ÷_')
+group by year
+order by year desc;
+ 
+select '·îÓ­',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='·îÓ­' or ngram regexp '^·îÓ­_')
+group by year
+order by year desc;
+ 
+select '¸©ÔÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸©ÔÊ' or ngram regexp '^¸©ÔÊ_')
+group by year
+order by year desc;
+ 
+select '¸Ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ê' or ngram regexp '^¸Ê_')
+group by year
+order by year desc;
+ 
+select '¸ÊĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ÊĞÄ' or ngram regexp '^¸ÊĞÄ_')
+group by year
+order by year desc;
+ 
+select '¸ÊĞÄÇéÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ÊĞÄÇéÔ¸' or ngram regexp '^¸ÊĞÄÇéÔ¸_')
+group by year
+order by year desc;
+ 
+select '¸ÊÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ÊÔ¸' or ngram regexp '^¸ÊÔ¸_')
+group by year
+order by year desc;
+ 
+select '¸Ğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ğ' or ngram regexp '^¸Ğ_')
+group by year
+order by year desc;
+ 
+select '¸Ğ¶÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ğ¶÷' or ngram regexp '^¸Ğ¶÷_')
+group by year
+order by year desc;
+ 
+select '¸Ğ¶÷´÷µÂ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ğ¶÷´÷µÂ' or ngram regexp '^¸Ğ¶÷´÷µÂ_')
+group by year
+order by year desc;
+ 
+select '¸Ğ¼¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ğ¼¤' or ngram regexp '^¸Ğ¼¤_')
+group by year
+order by year desc;
+ 
+select '¸Ğ¼¤²»¾¡',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ğ¼¤²»¾¡' or ngram regexp '^¸Ğ¼¤²»¾¡_')
+group by year
+order by year desc;
+ 
+select '¸Ğ¼¤ÌéÁã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ğ¼¤ÌéÁã' or ngram regexp '^¸Ğ¼¤ÌéÁã_')
+group by year
+order by year desc;
+ 
+select '¸ĞÍ¬ÉíÊÜ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ĞÍ¬ÉíÊÜ' or ngram regexp '^¸ĞÍ¬ÉíÊÜ_')
+group by year
+order by year desc;
+ 
+select '¸ĞĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ĞĞ»' or ngram regexp '^¸ĞĞ»_')
+group by year
+order by year desc;
+ 
+select '¸ĞĞËÈ¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ĞĞËÈ¤' or ngram regexp '^¸ĞĞËÈ¤_')
+group by year
+order by year desc;
+ 
+select '¸Ò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸Ò' or ngram regexp '^¸Ò_')
+group by year
+order by year desc;
+ 
+select '¸ß¿´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ß¿´' or ngram regexp '^¸ß¿´_')
+group by year
+order by year desc;
+ 
+select '¸ßÉ½ÑöÖ¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ßÉ½ÑöÖ¹' or ngram regexp '^¸ßÉ½ÑöÖ¹_')
+group by year
+order by year desc;
+ 
+select '¸ßĞË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ßĞË' or ngram regexp '^¸ßĞË_')
+group by year
+order by year desc;
+ 
+select '¸èËÌ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸èËÌ' or ngram regexp '^¸èËÌ_')
+group by year
+order by year desc;
+ 
+select '¸ø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸ø' or ngram regexp '^¸ø_')
+group by year
+order by year desc;
+ 
+select '¸øÁ³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸øÁ³' or ngram regexp '^¸øÁ³_')
+group by year
+order by year desc;
+ 
+select '¸øÃæ×Ó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¸øÃæ×Ó' or ngram regexp '^¸øÃæ×Ó_')
+group by year
+order by year desc;
+ 
+select '¹§¶ø¾´Ö®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹§¶ø¾´Ö®' or ngram regexp '^¹§¶ø¾´Ö®_')
+group by year
+order by year desc;
+ 
+select '¹§ºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹§ºØ' or ngram regexp '^¹§ºØ_')
+group by year
+order by year desc;
+ 
+select '¹§¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹§¾´' or ngram regexp '^¹§¾´_')
+group by year
+order by year desc;
+ 
+select '¹§Î¬',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹§Î¬' or ngram regexp '^¹§Î¬_')
+group by year
+order by year desc;
+ 
+select '¹§Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹§Ï²' or ngram regexp '^¹§Ï²_')
+group by year
+order by year desc;
+ 
+select '¹§×£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹§×£' or ngram regexp '^¹§×£_')
+group by year
+order by year desc;
+ 
+select '¹©·î',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹©·î' or ngram regexp '^¹©·î_')
+group by year
+order by year desc;
+ 
+select '¹«¼À',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹«¼À' or ngram regexp '^¹«¼À_')
+group by year
+order by year desc;
+ 
+select '¹°ÊÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹°ÊÖ' or ngram regexp '^¹°ÊÖ_')
+group by year
+order by year desc;
+ 
+select '¹Ë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ë' or ngram regexp '^¹Ë_')
+group by year
+order by year desc;
+ 
+select '¹Ë¼°',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ë¼°' or ngram regexp '^¹Ë¼°_')
+group by year
+order by year desc;
+ 
+select '¹ËÅÎ×ÔĞÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ËÅÎ×ÔĞÛ' or ngram regexp '^¹ËÅÎ×ÔĞÛ_')
+group by year
+order by year desc;
+ 
+select '¹ËÈ«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ËÈ«' or ngram regexp '^¹ËÈ«_')
+group by year
+order by year desc;
+ 
+select '¹ËÏ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ËÏ§' or ngram regexp '^¹ËÏ§_')
+group by year
+order by year desc;
+ 
+select '¹ÒÇ£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ÒÇ£' or ngram regexp '^¹ÒÇ£_')
+group by year
+order by year desc;
+ 
+select '¹Ø°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ø°®' or ngram regexp '^¹Ø°®_')
+group by year
+order by year desc;
+ 
+select '¹Ø»³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ø»³' or ngram regexp '^¹Ø»³_')
+group by year
+order by year desc;
+ 
+select '¹Ø»³±¸ÖÁ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ø»³±¸ÖÁ' or ngram regexp '^¹Ø»³±¸ÖÁ_')
+group by year
+order by year desc;
+ 
+select '¹ØÇĞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ØÇĞ' or ngram regexp '^¹ØÇĞ_')
+group by year
+order by year desc;
+ 
+select '¹ØĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ØĞÄ' or ngram regexp '^¹ØĞÄ_')
+group by year
+order by year desc;
+ 
+select '¹ØÕÕ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ØÕÕ' or ngram regexp '^¹ØÕÕ_')
+group by year
+order by year desc;
+ 
+select '¹Ø×¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ø×¢' or ngram regexp '^¹Ø×¢_')
+group by year
+order by year desc;
+ 
+select '¹Ü',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹Ü' or ngram regexp '^¹Ü_')
+group by year
+order by year desc;
+ 
+select '¹á×¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹á×¢' or ngram regexp '^¹á×¢_')
+group by year
+order by year desc;
+ 
+select '¹íÃÔĞÄÇÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹íÃÔĞÄÇÏ' or ngram regexp '^¹íÃÔĞÄÇÏ_')
+group by year
+order by year desc;
+ 
+select '¹ò°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ò°İ' or ngram regexp '^¹ò°İ_')
+group by year
+order by year desc;
+ 
+select '¹òßµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹òßµ' or ngram regexp '^¹òßµ_')
+group by year
+order by year desc;
+ 
+select '¹ı',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ı' or ngram regexp '^¹ı_')
+group by year
+order by year desc;
+ 
+select '¹ı½±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ı½±' or ngram regexp '^¹ı½±_')
+group by year
+order by year desc;
+ 
+select '¹ıÎÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ıÎÊ' or ngram regexp '^¹ıÎÊ_')
+group by year
+order by year desc;
+ 
+select '¹ıÓş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ıÓş' or ngram regexp '^¹ıÓş_')
+group by year
+order by year desc;
+ 
+select '¹ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¹ş' or ngram regexp '^¹ş_')
+group by year
+order by year desc;
+ 
+select 'º¨³©',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='º¨³©' or ngram regexp '^º¨³©_')
+group by year
+order by year desc;
+ 
+select 'ºÀÇéÂú»³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºÀÇéÂú»³' or ngram regexp '^ºÀÇéÂú»³_')
+group by year
+order by year desc;
+ 
+select 'ºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºÃ' or ngram regexp '^ºÃ_')
+group by year
+order by year desc;
+ 
+select 'ºÃÆæ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºÃÆæ' or ngram regexp '^ºÃÆæ_')
+group by year
+order by year desc;
+ 
+select 'ºÃÇé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºÃÇé' or ngram regexp '^ºÃÇé_')
+group by year
+order by year desc;
+ 
+select 'ºÈ²Ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºÈ²Ê' or ngram regexp '^ºÈ²Ê_')
+group by year
+order by year desc;
+ 
+select 'ºÏÕÆ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºÏÕÆ' or ngram regexp '^ºÏÕÆ_')
+group by year
+order by year desc;
+ 
+select 'ºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºØ' or ngram regexp '^ºØ_')
+group by year
+order by year desc;
+ 
+select 'ºİ×¥',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºİ×¥' or ngram regexp '^ºİ×¥_')
+group by year
+order by year desc;
+ 
+select 'ºŞ²»µÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºŞ²»µÃ' or ngram regexp '^ºŞ²»µÃ_')
+group by year
+order by year desc;
+ 
+select 'ºŞ²»ÄÜ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºŞ²»ÄÜ' or ngram regexp '^ºŞ²»ÄÜ_')
+group by year
+order by year desc;
+ 
+select 'ºáĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºáĞÄ' or ngram regexp '^ºáĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ºñÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ºñÍû' or ngram regexp '^ºñÍû_')
+group by year
+order by year desc;
+ 
+select '»³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»³' or ngram regexp '^»³_')
+group by year
+order by year desc;
+ 
+select '»³Áµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»³Áµ' or ngram regexp '^»³Áµ_')
+group by year
+order by year desc;
+ 
+select '»³Äî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»³Äî' or ngram regexp '^»³Äî_')
+group by year
+order by year desc;
+ 
+select '»³Ïë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»³Ïë' or ngram regexp '^»³Ïë_')
+group by year
+order by year desc;
+ 
+select '»¶',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶' or ngram regexp '^»¶_')
+group by year
+order by year desc;
+ 
+select '»¶³©',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶³©' or ngram regexp '^»¶³©_')
+group by year
+order by year desc;
+ 
+select '»¶»¶Ï²Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶»¶Ï²Ï²' or ngram regexp '^»¶»¶Ï²Ï²_')
+group by year
+order by year desc;
+ 
+select '»¶¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶¿ì' or ngram regexp '^»¶¿ì_')
+group by year
+order by year desc;
+ 
+select '»¶ÀÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ÀÖ' or ngram regexp '^»¶ÀÖ_')
+group by year
+order by year desc;
+ 
+select '»¶ÄÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ÄÖ' or ngram regexp '^»¶ÄÖ_')
+group by year
+order by year desc;
+ 
+select '»¶ÉùÀ×¶¯',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ÉùÀ×¶¯' or ngram regexp '^»¶ÉùÀ×¶¯_')
+group by year
+order by year desc;
+ 
+select '»¶ÌÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ÌÚ' or ngram regexp '^»¶ÌÚ_')
+group by year
+order by year desc;
+ 
+select '»¶ÌìÏ²µØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ÌìÏ²µØ' or ngram regexp '^»¶ÌìÏ²µØ_')
+group by year
+order by year desc;
+ 
+select '»¶Î¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶Î¿' or ngram regexp '^»¶Î¿_')
+group by year
+order by year desc;
+ 
+select '»¶Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶Ï²' or ngram regexp '^»¶Ï²_')
+group by year
+order by year desc;
+ 
+select '»¶ĞÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ĞÀ' or ngram regexp '^»¶ĞÀ_')
+group by year
+order by year desc;
+ 
+select '»¶ĞÀ¹ÄÎè',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ĞÀ¹ÄÎè' or ngram regexp '^»¶ĞÀ¹ÄÎè_')
+group by year
+order by year desc;
+ 
+select '»¶Ó­',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶Ó­' or ngram regexp '^»¶Ó­_')
+group by year
+order by year desc;
+ 
+select '»¶Óä',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶Óä' or ngram regexp '^»¶Óä_')
+group by year
+order by year desc;
+ 
+select '»¶Óé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶Óé' or ngram regexp '^»¶Óé_')
+group by year
+order by year desc;
+ 
+select '»¶ÔÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶ÔÃ' or ngram regexp '^»¶ÔÃ_')
+group by year
+order by year desc;
+ 
+select '»¶âí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¶âí' or ngram regexp '^»¶âí_')
+group by year
+order by year desc;
+ 
+select '»¹Àñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»¹Àñ' or ngram regexp '^»¹Àñ_')
+group by year
+order by year desc;
+ 
+select '»Ø¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»Ø¾´' or ngram regexp '^»Ø¾´_')
+group by year
+order by year desc;
+ 
+select '»ØÀñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»ØÀñ' or ngram regexp '^»ØÀñ_')
+group by year
+order by year desc;
+ 
+select '»êÇ£ÃÎÏµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»êÇ£ÃÎÏµ' or ngram regexp '^»êÇ£ÃÎÏµ_')
+group by year
+order by year desc;
+ 
+select '»êÇ£ÃÎİÓ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»êÇ£ÃÎİÓ' or ngram regexp '^»êÇ£ÃÎİÓ_')
+group by year
+order by year desc;
+ 
+select '»íÀÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»íÀÊ' or ngram regexp '^»íÀÊ_')
+group by year
+order by year desc;
+ 
+select '»üÊ×',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='»üÊ×' or ngram regexp '^»üÊ×_')
+group by year
+order by year desc;
+ 
+select '¼«ÈÈĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼«ÈÈĞÄ' or ngram regexp '^¼«ÈÈĞÄ_')
+group by year
+order by year desc;
+ 
+select '¼¯ÖĞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼¯ÖĞ' or ngram regexp '^¼¯ÖĞ_')
+group by year
+order by year desc;
+ 
+select '¼¯×¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼¯×¢' or ngram regexp '^¼¯×¢_')
+group by year
+order by year desc;
+ 
+select '¼±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼±' or ngram regexp '^¼±_')
+group by year
+order by year desc;
+ 
+select '¼µ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼µ' or ngram regexp '^¼µ_')
+group by year
+order by year desc;
+ 
+select '¼µ¶Ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼µ¶Ê' or ngram regexp '^¼µ¶Ê_')
+group by year
+order by year desc;
+ 
+select '¼½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼½' or ngram regexp '^¼½_')
+group by year
+order by year desc;
+ 
+select '¼½Çó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼½Çó' or ngram regexp '^¼½Çó_')
+group by year
+order by year desc;
+ 
+select '¼½Íû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼½Íû' or ngram regexp '^¼½Íû_')
+group by year
+order by year desc;
+ 
+select '¼À',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼À' or ngram regexp '^¼À_')
+group by year
+order by year desc;
+ 
+select '¼À°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼À°İ' or ngram regexp '^¼À°İ_')
+group by year
+order by year desc;
+ 
+select '¼Àµì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼Àµì' or ngram regexp '^¼Àµì_')
+group by year
+order by year desc;
+ 
+select '¼ÀÉ¨',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼ÀÉ¨' or ngram regexp '^¼ÀÉ¨_')
+group by year
+order by year desc;
+ 
+select '¼Àìë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼Àìë' or ngram regexp '^¼Àìë_')
+group by year
+order by year desc;
+ 
+select '¼Ç¹Ò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼Ç¹Ò' or ngram regexp '^¼Ç¹Ò_')
+group by year
+order by year desc;
+ 
+select '¼É',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼É' or ngram regexp '^¼É_')
+group by year
+order by year desc;
+ 
+select '¼É¶Ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼É¶Ê' or ngram regexp '^¼É¶Ê_')
+group by year
+order by year desc;
+ 
+select '¼Î',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼Î' or ngram regexp '^¼Î_')
+group by year
+order by year desc;
+ 
+select '¼Î½±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼Î½±' or ngram regexp '^¼Î½±_')
+group by year
+order by year desc;
+ 
+select '¼ÎĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼ÎĞí' or ngram regexp '^¼ÎĞí_')
+group by year
+order by year desc;
+ 
+select '¼ĞµÀ»¶Ó­',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼ĞµÀ»¶Ó­' or ngram regexp '^¼ĞµÀ»¶Ó­_')
+group by year
+order by year desc;
+ 
+select '¼æ¹Ë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼æ¹Ë' or ngram regexp '^¼æ¹Ë_')
+group by year
+order by year desc;
+ 
+select '¼ìµã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼ìµã' or ngram regexp '^¼ìµã_')
+group by year
+order by year desc;
+ 
+select '¼û°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼û°®' or ngram regexp '^¼û°®_')
+group by year
+order by year desc;
+ 
+select '¼ûÒåÓÂÎª',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¼ûÒåÓÂÎª' or ngram regexp '^¼ûÒåÓÂÎª_')
+group by year
+order by year desc;
+ 
+select '½±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½±' or ngram regexp '^½±_')
+group by year
+order by year desc;
+ 
+select '½±Àø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½±Àø' or ngram regexp '^½±Àø_')
+group by year
+order by year desc;
+ 
+select '½±ÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½±ÉÍ' or ngram regexp '^½±ÉÍ_')
+group by year
+order by year desc;
+ 
+select '½±Ò´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½±Ò´' or ngram regexp '^½±Ò´_')
+group by year
+order by year desc;
+ 
+select '½²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½²' or ngram regexp '^½²_')
+group by year
+order by year desc;
+ 
+select '½²¾¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½²¾¿' or ngram regexp '^½²¾¿_')
+group by year
+order by year desc;
+ 
+select '½²Çó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½²Çó' or ngram regexp '^½²Çó_')
+group by year
+order by year desc;
+ 
+select '½»¿Ú³ÆÓş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½»¿Ú³ÆÓş' or ngram regexp '^½»¿Ú³ÆÓş_')
+group by year
+order by year desc;
+ 
+select '½»¿Ú³ÆÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½»¿Ú³ÆÔŞ' or ngram regexp '^½»¿Ú³ÆÔŞ_')
+group by year
+order by year desc;
+ 
+select '½ĞºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½ĞºÃ' or ngram regexp '^½ĞºÃ_')
+group by year
+order by year desc;
+ 
+select '½Ğ¾ø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½Ğ¾ø' or ngram regexp '^½Ğ¾ø_')
+group by year
+order by year desc;
+ 
+select '½ÓÊÜ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½ÓÊÜ' or ngram regexp '^½ÓÊÜ_')
+group by year
+order by year desc;
+ 
+select '½Ô´ó»¶Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='½Ô´ó»¶Ï²' or ngram regexp '^½Ô´ó»¶Ï²_')
+group by year
+order by year desc;
+ 
+select '¾¡',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾¡' or ngram regexp '^¾¡_')
+group by year
+order by year desc;
+ 
+select '¾¡Ğ¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾¡Ğ¢' or ngram regexp '^¾¡Ğ¢_')
+group by year
+order by year desc;
+ 
+select '¾¡ÖÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾¡ÖÒ' or ngram regexp '^¾¡ÖÒ_')
+group by year
+order by year desc;
+ 
+select '¾ªÏ²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾ªÏ²' or ngram regexp '^¾ªÏ²_')
+group by year
+order by year desc;
+ 
+select '¾°Ñö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾°Ñö' or ngram regexp '^¾°Ñö_')
+group by year
+order by year desc;
+ 
+select '¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´' or ngram regexp '^¾´_')
+group by year
+order by year desc;
+ 
+select '¾´°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´°®' or ngram regexp '^¾´°®_')
+group by year
+order by year desc;
+ 
+select '¾´·î',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´·î' or ngram regexp '^¾´·î_')
+group by year
+order by year desc;
+ 
+select '¾´·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´·ş' or ngram regexp '^¾´·ş_')
+group by year
+order by year desc;
+ 
+select '¾´ºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´ºØ' or ngram regexp '^¾´ºØ_')
+group by year
+order by year desc;
+ 
+select '¾´Àñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´Àñ' or ngram regexp '^¾´Àñ_')
+group by year
+order by year desc;
+ 
+select '¾´Ä½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´Ä½' or ngram regexp '^¾´Ä½_')
+group by year
+order by year desc;
+ 
+select '¾´Åå',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´Åå' or ngram regexp '^¾´Åå_')
+group by year
+order by year desc;
+ 
+select '¾´ÈôÉñÃ÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´ÈôÉñÃ÷' or ngram regexp '^¾´ÈôÉñÃ÷_')
+group by year
+order by year desc;
+ 
+select '¾´Î·',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´Î·' or ngram regexp '^¾´Î·_')
+group by year
+order by year desc;
+ 
+select '¾´Ñö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´Ñö' or ngram regexp '^¾´Ñö_')
+group by year
+order by year desc;
+ 
+select '¾´ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´ÖØ' or ngram regexp '^¾´ÖØ_')
+group by year
+order by year desc;
+ 
+select '¾´×£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾´×£' or ngram regexp '^¾´×£_')
+group by year
+order by year desc;
+ 
+select '¾¹¸Ò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾¹¸Ò' or ngram regexp '^¾¹¸Ò_')
+group by year
+order by year desc;
+ 
+select '¾Ï¹ª',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾Ï¹ª' or ngram regexp '^¾Ï¹ª_')
+group by year
+order by year desc;
+ 
+select '¾Û½¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾Û½¹' or ngram regexp '^¾Û½¹_')
+group by year
+order by year desc;
+ 
+select '¾Û¾«»áÉñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾Û¾«»áÉñ' or ngram regexp '^¾Û¾«»áÉñ_')
+group by year
+order by year desc;
+ 
+select '¾ì°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾ì°®' or ngram regexp '^¾ì°®_')
+group by year
+order by year desc;
+ 
+select '¾ìÁµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾ìÁµ' or ngram regexp '^¾ìÁµ_')
+group by year
+order by year desc;
+ 
+select '¾ìÄî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¾ìÄî' or ngram regexp '^¾ìÄî_')
+group by year
+order by year desc;
+ 
+select '¿ªÂÌµÆ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ªÂÌµÆ' or ngram regexp '^¿ªÂÌµÆ_')
+group by year
+order by year desc;
+ 
+select '¿ªĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ªĞÄ' or ngram regexp '^¿ªĞÄ_')
+group by year
+order by year desc;
+ 
+select '¿´³µ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´³µ' or ngram regexp '^¿´³µ_')
+group by year
+order by year desc;
+ 
+select '¿´µÃÆğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´µÃÆğ' or ngram regexp '^¿´µÃÆğ_')
+group by year
+order by year desc;
+ 
+select '¿´µÃÉÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´µÃÉÏ' or ngram regexp '^¿´µÃÉÏ_')
+group by year
+order by year desc;
+ 
+select '¿´µÃÉÏÑÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´µÃÉÏÑÛ' or ngram regexp '^¿´µÃÉÏÑÛ_')
+group by year
+order by year desc;
+ 
+select '¿´ÉÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´ÉÏ' or ngram regexp '^¿´ÉÏ_')
+group by year
+order by year desc;
+ 
+select '¿´ÉÏÑÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´ÉÏÑÛ' or ngram regexp '^¿´ÉÏÑÛ_')
+group by year
+order by year desc;
+ 
+select '¿´ÔÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´ÔÚ' or ngram regexp '^¿´ÔÚ_')
+group by year
+order by year desc;
+ 
+select '¿´ÖĞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´ÖĞ' or ngram regexp '^¿´ÖĞ_')
+group by year
+order by year desc;
+ 
+select '¿´ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿´ÖØ' or ngram regexp '^¿´ÖØ_')
+group by year
+order by year desc;
+ 
+select '¿¼¾¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿¼¾¿' or ngram regexp '^¿¼¾¿_')
+group by year
+order by year desc;
+ 
+select '¿ÄÍ·',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÄÍ·' or ngram regexp '^¿ÄÍ·_')
+group by year
+order by year desc;
+ 
+select '¿ÊÄ½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÊÄ½' or ngram regexp '^¿ÊÄ½_')
+group by year
+order by year desc;
+ 
+select '¿ÊÄî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÊÄî' or ngram regexp '^¿ÊÄî_')
+group by year
+order by year desc;
+ 
+select '¿ÊÅÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÊÅÎ' or ngram regexp '^¿ÊÅÎ_')
+group by year
+order by year desc;
+ 
+select '¿ÊÇó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÊÇó' or ngram regexp '^¿ÊÇó_')
+group by year
+order by year desc;
+ 
+select '¿ÊÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÊÍû' or ngram regexp '^¿ÊÍû_')
+group by year
+order by year desc;
+ 
+select '¿ÊÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÊÏë' or ngram regexp '^¿ÊÏë_')
+group by year
+order by year desc;
+ 
+select '¿Ï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿Ï' or ngram regexp '^¿Ï_')
+group by year
+order by year desc;
+ 
+select '¿Ï¶¨',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿Ï¶¨' or ngram regexp '^¿Ï¶¨_')
+group by year
+order by year desc;
+ 
+select '¿ÏÓÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ÏÓÚ' or ngram regexp '^¿ÏÓÚ_')
+group by year
+order by year desc;
+ 
+select '¿Ú½Ç´º·ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿Ú½Ç´º·ç' or ngram regexp '^¿Ú½Ç´º·ç_')
+group by year
+order by year desc;
+ 
+select '¿á°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿á°®' or ngram regexp '^¿á°®_')
+group by year
+order by year desc;
+ 
+select '¿áºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿áºÃ' or ngram regexp '^¿áºÃ_')
+group by year
+order by year desc;
+ 
+select '¿ä',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ä' or ngram regexp '^¿ä_')
+group by year
+order by year desc;
+ 
+select '¿ä½±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ä½±' or ngram regexp '^¿ä½±_')
+group by year
+order by year desc;
+ 
+select '¿äÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿äÔŞ' or ngram regexp '^¿äÔŞ_')
+group by year
+order by year desc;
+ 
+select '¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ì' or ngram regexp '^¿ì_')
+group by year
+order by year desc;
+ 
+select '¿ì»î',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ì»î' or ngram regexp '^¿ì»î_')
+group by year
+order by year desc;
+ 
+select '¿ìÀÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ìÀÖ' or ngram regexp '^¿ìÀÖ_')
+group by year
+order by year desc;
+ 
+select '¿ìÎ¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ìÎ¿' or ngram regexp '^¿ìÎ¿_')
+group by year
+order by year desc;
+ 
+select '¿ìÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ìÒâ' or ngram regexp '^¿ìÒâ_')
+group by year
+order by year desc;
+ 
+select '¿í³©',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿í³©' or ngram regexp '^¿í³©_')
+group by year
+order by year desc;
+ 
+select '¿íËÉ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿íËÉ' or ngram regexp '^¿íËÉ_')
+group by year
+order by year desc;
+ 
+select '¿ñÏ²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ñÏ²' or ngram regexp '^¿ñÏ²_')
+group by year
+order by year desc;
+ 
+select '¿ñÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='¿ñÏë' or ngram regexp '^¿ñÏë_')
+group by year
+order by year desc;
+ 
+select 'À´Éñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='À´Éñ' or ngram regexp '^À´Éñ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖ' or ngram regexp '^ÀÖ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖ²»¿ÉÖ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖ²»¿ÉÖ§' or ngram regexp '^ÀÖ²»¿ÉÖ§_')
+group by year
+order by year desc;
+ 
+select 'ÀÖµßµß',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖµßµß' or ngram regexp '^ÀÖµßµß_')
+group by year
+order by year desc;
+ 
+select 'ÀÖºÇºÇ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖºÇºÇ' or ngram regexp '^ÀÖºÇºÇ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖÀÖºÇºÇ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖÀÖºÇºÇ' or ngram regexp '^ÀÖÀÖºÇºÇ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖÌÕÌÕ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖÌÕÌÕ' or ngram regexp '^ÀÖÌÕÌÕ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖÒâ' or ngram regexp '^ÀÖÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖÓÆÓÆ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖÓÆÓÆ' or ngram regexp '^ÀÖÓÆÓÆ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖÓÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖÓÚ' or ngram regexp '^ÀÖÓÚ_')
+group by year
+order by year desc;
+ 
+select 'ÀÖ×Ì×Ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀÖ×Ì×Ì' or ngram regexp '^ÀÖ×Ì×Ì_')
+group by year
+order by year desc;
+ 
+select 'Àí»á',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Àí»á' or ngram regexp '^Àí»á_')
+group by year
+order by year desc;
+ 
+select 'ÀíÖ±Æø×³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀíÖ±Æø×³' or ngram regexp '^ÀíÖ±Æø×³_')
+group by year
+order by year desc;
+ 
+select 'ÀñÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÀñÔŞ' or ngram regexp '^ÀñÔŞ_')
+group by year
+order by year desc;
+ 
+select 'Á¢Ïî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Á¢Ïî' or ngram regexp '^Á¢Ïî_')
+group by year
+order by year desc;
+ 
+select 'Á¦Ö÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Á¦Ö÷' or ngram regexp '^Á¦Ö÷_')
+group by year
+order by year desc;
+ 
+select 'Á¯°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Á¯°®' or ngram regexp '^Á¯°®_')
+group by year
+order by year desc;
+ 
+select 'Áµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Áµ' or ngram regexp '^Áµ_')
+group by year
+order by year desc;
+ 
+select 'Áµ°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Áµ°®' or ngram regexp '^Áµ°®_')
+group by year
+order by year desc;
+ 
+select 'ÁµÁµ²»Éá',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÁµÁµ²»Éá' or ngram regexp '^ÁµÁµ²»Éá_')
+group by year
+order by year desc;
+ 
+select 'ÁìÇé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÁìÇé' or ngram regexp '^ÁìÇé_')
+group by year
+order by year desc;
+ 
+select 'Áô¸öĞÄÑÛ¶ù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Áô¸öĞÄÑÛ¶ù' or ngram regexp '^Áô¸öĞÄÑÛ¶ù_')
+group by year
+order by year desc;
+ 
+select 'ÁôÉñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÁôÉñ' or ngram regexp '^ÁôÉñ_')
+group by year
+order by year desc;
+ 
+select 'ÁôĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÁôĞÄ' or ngram regexp '^ÁôĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ÁôÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÁôÒâ' or ngram regexp '^ÁôÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÂÛ¹¦ĞĞÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÂÛ¹¦ĞĞÉÍ' or ngram regexp '^ÂÛ¹¦ĞĞÉÍ_')
+group by year
+order by year desc;
+ 
+select 'ÂòÕË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÂòÕË' or ngram regexp '^ÂòÕË_')
+group by year
+order by year desc;
+ 
+select 'Âú',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Âú' or ngram regexp '^Âú_')
+group by year
+order by year desc;
+ 
+select 'Âú»³ºÀÇé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Âú»³ºÀÇé' or ngram regexp '^Âú»³ºÀÇé_')
+group by year
+order by year desc;
+ 
+select 'Âú»³¼¤Çé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Âú»³¼¤Çé' or ngram regexp '^Âú»³¼¤Çé_')
+group by year
+order by year desc;
+ 
+select 'ÂúÃæ´º·ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÂúÃæ´º·ç' or ngram regexp '^ÂúÃæ´º·ç_')
+group by year
+order by year desc;
+ 
+select 'ÂúĞÄ»¶Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÂúĞÄ»¶Ï²' or ngram regexp '^ÂúĞÄ»¶Ï²_')
+group by year
+order by year desc;
+ 
+select 'ÂúÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÂúÒâ' or ngram regexp '^ÂúÒâ_')
+group by year
+order by year desc;
+ 
+select 'Âú×ã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Âú×ã' or ngram regexp '^Âú×ã_')
+group by year
+order by year desc;
+ 
+select 'Ã¼·ÉÉ«Îè',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ã¼·ÉÉ«Îè' or ngram regexp '^Ã¼·ÉÉ«Îè_')
+group by year
+order by year desc;
+ 
+select 'ÃÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÀ' or ngram regexp '^ÃÀ_')
+group by year
+order by year desc;
+ 
+select 'ÃÀÑÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÀÑÔ' or ngram regexp '^ÃÀÑÔ_')
+group by year
+order by year desc;
+ 
+select 'ÃÀ×Ì×Ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÀ×Ì×Ì' or ngram regexp '^ÃÀ×Ì×Ì_')
+group by year
+order by year desc;
+ 
+select 'ÃÎ»êİÓÈÆ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÎ»êİÓÈÆ' or ngram regexp '^ÃÎ»êİÓÈÆ_')
+group by year
+order by year desc;
+ 
+select 'ÃÎÃÂÒÔÇó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÎÃÂÒÔÇó' or ngram regexp '^ÃÎÃÂÒÔÇó_')
+group by year
+order by year desc;
+ 
+select 'ÃÎÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÎÏë' or ngram regexp '^ÃÎÏë_')
+group by year
+order by year desc;
+ 
+select 'ÃÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÔ' or ngram regexp '^ÃÔ_')
+group by year
+order by year desc;
+ 
+select 'ÃÔÁµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÔÁµ' or ngram regexp '^ÃÔÁµ_')
+group by year
+order by year desc;
+ 
+select 'ÃÔÉÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃÔÉÏ' or ngram regexp '^ÃÔÉÏ_')
+group by year
+order by year desc;
+ 
+select 'ÃæÓĞÏ²É«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃæÓĞÏ²É«' or ngram regexp '^ÃæÓĞÏ²É«_')
+group by year
+order by year desc;
+ 
+select 'ÃùĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÃùĞ»' or ngram regexp '^ÃùĞ»_')
+group by year
+order by year desc;
+ 
+select 'Ãı½±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ãı½±' or ngram regexp '^Ãı½±_')
+group by year
+order by year desc;
+ 
+select 'Ä¤°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ä¤°İ' or ngram regexp '^Ä¤°İ_')
+group by year
+order by year desc;
+ 
+select 'Ä¬ÈÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ä¬ÈÏ' or ngram regexp '^Ä¬ÈÏ_')
+group by year
+order by year desc;
+ 
+select 'Ä¬Ğí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ä¬Ğí' or ngram regexp '^Ä¬Ğí_')
+group by year
+order by year desc;
+ 
+select 'Ä½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ä½' or ngram regexp '^Ä½_')
+group by year
+order by year desc;
+ 
+select 'Ä½Ãû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ä½Ãû' or ngram regexp '^Ä½Ãû_')
+group by year
+order by year desc;
+ 
+select 'Äç°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Äç°®' or ngram regexp '^Äç°®_')
+group by year
+order by year desc;
+ 
+select 'Äî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Äî' or ngram regexp '^Äî_')
+group by year
+order by year desc;
+ 
+select 'ÅÄ°¸½Ğ¾ø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÅÄ°¸½Ğ¾ø' or ngram regexp '^ÅÄ°¸½Ğ¾ø_')
+group by year
+order by year desc;
+ 
+select 'ÅÄÊÖ³Æ¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÅÄÊÖ³Æ¿ì' or ngram regexp '^ÅÄÊÖ³Æ¿ì_')
+group by year
+order by year desc;
+ 
+select 'ÅÄÊÖ½ĞºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÅÄÊÖ½ĞºÃ' or ngram regexp '^ÅÄÊÖ½ĞºÃ_')
+group by year
+order by year desc;
+ 
+select 'ÅÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÅÎ' or ngram regexp '^ÅÎ_')
+group by year
+order by year desc;
+ 
+select 'ÅÎÄî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÅÎÄî' or ngram regexp '^ÅÎÄî_')
+group by year
+order by year desc;
+ 
+select 'ÅÎÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÅÎÍû' or ngram regexp '^ÅÎÍû_')
+group by year
+order by year desc;
+ 
+select 'Åå',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Åå' or ngram regexp '^Åå_')
+group by year
+order by year desc;
+ 
+select 'Åå·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Åå·ş' or ngram regexp '^Åå·ş_')
+group by year
+order by year desc;
+ 
+select 'Åõ³¡',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Åõ³¡' or ngram regexp '^Åõ³¡_')
+group by year
+order by year desc;
+ 
+select 'Åú×¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Åú×¼' or ngram regexp '^Åú×¼_')
+group by year
+order by year desc;
+ 
+select 'Æ«°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ«°®' or ngram regexp '^Æ«°®_')
+group by year
+order by year desc;
+ 
+select 'Æ«³è',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ«³è' or ngram regexp '^Æ«³è_')
+group by year
+order by year desc;
+ 
+select 'Æ«ºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ«ºÃ' or ngram regexp '^Æ«ºÃ_')
+group by year
+order by year desc;
+ 
+select 'Æ«ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ«ÖØ' or ngram regexp '^Æ«ÖØ_')
+group by year
+order by year desc;
+ 
+select 'Æ®Æ®È»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ®Æ®È»' or ngram regexp '^Æ®Æ®È»_')
+group by year
+order by year desc;
+ 
+select 'Æ®Æ®ÓûÏÉ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ®Æ®ÓûÏÉ' or ngram regexp '^Æ®Æ®ÓûÏÉ_')
+group by year
+order by year desc;
+ 
+select 'ÆÈÇĞĞèÒª',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆÈÇĞĞèÒª' or ngram regexp '^ÆÈÇĞĞèÒª_')
+group by year
+order by year desc;
+ 
+select 'ÆÕÌìÍ¬Çì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆÕÌìÍ¬Çì' or ngram regexp '^ÆÕÌìÍ¬Çì_')
+group by year
+order by year desc;
+ 
+select 'ÆÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆÚ' or ngram regexp '^ÆÚ_')
+group by year
+order by year desc;
+ 
+select 'ÆÚ´ı',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆÚ´ı' or ngram regexp '^ÆÚ´ı_')
+group by year
+order by year desc;
+ 
+select 'ÆÚÅÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆÚÅÎ' or ngram regexp '^ÆÚÅÎ_')
+group by year
+order by year desc;
+ 
+select 'ÆÚÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆÚÍû' or ngram regexp '^ÆÚÍû_')
+group by year
+order by year desc;
+ 
+select 'ÆíÅÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆíÅÎ' or ngram regexp '^ÆíÅÎ_')
+group by year
+order by year desc;
+ 
+select 'Æğ¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æğ¾´' or ngram regexp '^Æğ¾´_')
+group by year
+order by year desc;
+ 
+select 'Æó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æó' or ngram regexp '^Æó_')
+group by year
+order by year desc;
+ 
+select 'ÆóÄ½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆóÄ½' or ngram regexp '^ÆóÄ½_')
+group by year
+order by year desc;
+ 
+select 'ÆóÅÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆóÅÎ' or ngram regexp '^ÆóÅÎ_')
+group by year
+order by year desc;
+ 
+select 'ÆóÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÆóÍû' or ngram regexp '^ÆóÍû_')
+group by year
+order by year desc;
+ 
+select 'Æ÷ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Æ÷ÖØ' or ngram regexp '^Æ÷ÖØ_')
+group by year
+order by year desc;
+ 
+select 'Ç£³¦¹Ò¶Ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ç£³¦¹Ò¶Ç' or ngram regexp '^Ç£³¦¹Ò¶Ç_')
+group by year
+order by year desc;
+ 
+select 'Ç£¹Ò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ç£¹Ò' or ngram regexp '^Ç£¹Ò_')
+group by year
+order by year desc;
+ 
+select 'Ç§¶÷ÍòĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ç§¶÷ÍòĞ»' or ngram regexp '^Ç§¶÷ÍòĞ»_')
+group by year
+order by year desc;
+ 
+select 'ÇÃ±ß¹Ä',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÃ±ß¹Ä' or ngram regexp '^ÇÃ±ß¹Ä_')
+group by year
+order by year desc;
+ 
+select 'ÇÆµÃÆğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÆµÃÆğ' or ngram regexp '^ÇÆµÃÆğ_')
+group by year
+order by year desc;
+ 
+select 'ÇÆµÃÉÏÑÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÆµÃÉÏÑÛ' or ngram regexp '^ÇÆµÃÉÏÑÛ_')
+group by year
+order by year desc;
+ 
+select 'ÇÌÅÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÌÅÎ' or ngram regexp '^ÇÌÅÎ_')
+group by year
+order by year desc;
+ 
+select 'ÇÌÆó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÌÆó' or ngram regexp '^ÇÌÆó_')
+group by year
+order by year desc;
+ 
+select 'ÇÌÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÌÍû' or ngram regexp '^ÇÌÍû_')
+group by year
+order by year desc;
+ 
+select 'ÇÕ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÕ' or ngram regexp '^ÇÕ_')
+group by year
+order by year desc;
+ 
+select 'ÇÕÅå',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇÕÅå' or ngram regexp '^ÇÕÅå_')
+group by year
+order by year desc;
+ 
+select 'Ç×ÈÈ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ç×ÈÈ' or ngram regexp '^Ç×ÈÈ_')
+group by year
+order by year desc;
+ 
+select 'Ç×ÈÈÇ×ÈÈ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ç×ÈÈÇ×ÈÈ' or ngram regexp '^Ç×ÈÈÇ×ÈÈ_')
+group by year
+order by year desc;
+ 
+select 'Çá¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Çá¿ì' or ngram regexp '^Çá¿ì_')
+group by year
+order by year desc;
+ 
+select 'ÇãÄ½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇãÄ½' or ngram regexp '^ÇãÄ½_')
+group by year
+order by year desc;
+ 
+select 'ÇãÏò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇãÏò' or ngram regexp '^ÇãÏò_')
+group by year
+order by year desc;
+ 
+select 'ÇãĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇãĞÄ' or ngram regexp '^ÇãĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ÇéÓĞ¶ÀÖÓ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇéÓĞ¶ÀÖÓ' or ngram regexp '^ÇéÓĞ¶ÀÖÓ_')
+group by year
+order by year desc;
+ 
+select 'ÇéÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇéÔ¸' or ngram regexp '^ÇéÔ¸_')
+group by year
+order by year desc;
+ 
+select 'Çì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Çì' or ngram regexp '^Çì_')
+group by year
+order by year desc;
+ 
+select 'ÇìºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇìºØ' or ngram regexp '^ÇìºØ_')
+group by year
+order by year desc;
+ 
+select 'ÇìĞÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÇìĞÒ' or ngram regexp '^ÇìĞÒ_')
+group by year
+order by year desc;
+ 
+select 'Çì×£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Çì×£' or ngram regexp '^Çì×£_')
+group by year
+order by year desc;
+ 
+select 'È¦¶¨',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='È¦¶¨' or ngram regexp '^È¦¶¨_')
+group by year
+order by year desc;
+ 
+select 'ÈÄÓĞĞËÈ¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÄÓĞĞËÈ¤' or ngram regexp '^ÈÄÓĞĞËÈ¤_')
+group by year
+order by year desc;
+ 
+select 'ÈÈĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÈĞÄ' or ngram regexp '^ÈÈĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ÈËĞÄ´ó¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈËĞÄ´ó¿ì' or ngram regexp '^ÈËĞÄ´ó¿ì_')
+group by year
+order by year desc;
+ 
+select 'ÈÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÏ' or ngram regexp '^ÈÏ_')
+group by year
+order by year desc;
+ 
+select 'ÈÏ¿É',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÏ¿É' or ngram regexp '^ÈÏ¿É_')
+group by year
+order by year desc;
+ 
+select 'ÈÏÁË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÏÁË' or ngram regexp '^ÈÏÁË_')
+group by year
+order by year desc;
+ 
+select 'ÈÏÃü',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÏÃü' or ngram regexp '^ÈÏÃü_')
+group by year
+order by year desc;
+ 
+select 'ÈÕÓĞËùË¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÕÓĞËùË¼' or ngram regexp '^ÈÕÓĞËùË¼_')
+group by year
+order by year desc;
+ 
+select 'ÈÚÈÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈÚÈÚ' or ngram regexp '^ÈÚÈÚ_')
+group by year
+order by year desc;
+ 
+select 'Èİ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Èİ' or ngram regexp '^Èİ_')
+group by year
+order by year desc;
+ 
+select 'ÈİĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈİĞí' or ngram regexp '^ÈİĞí_')
+group by year
+order by year desc;
+ 
+select 'Èç³ÕÈç¿ñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Èç³ÕÈç¿ñ' or ngram regexp '^Èç³ÕÈç¿ñ_')
+group by year
+order by year desc;
+ 
+select 'Èç³ÕÈç×í',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Èç³ÕÈç×í' or ngram regexp '^Èç³ÕÈç×í_')
+group by year
+order by year desc;
+ 
+select 'Èç»ñÖÁ±¦',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Èç»ñÖÁ±¦' or ngram regexp '^Èç»ñÖÁ±¦_')
+group by year
+order by year desc;
+ 
+select 'ÈçÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈçÒâ' or ngram regexp '^ÈçÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÈçÔ¸ÒÔ³¥',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈçÔ¸ÒÔ³¥' or ngram regexp '^ÈçÔ¸ÒÔ³¥_')
+group by year
+order by year desc;
+ 
+select 'Èç×íÈç³Õ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Èç×íÈç³Õ' or ngram regexp '^Èç×íÈç³Õ_')
+group by year
+order by year desc;
+ 
+select 'ÈëÃÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈëÃÔ' or ngram regexp '^ÈëÃÔ_')
+group by year
+order by year desc;
+ 
+select 'ÈëÄ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈëÄ§' or ngram regexp '^ÈëÄ§_')
+group by year
+order by year desc;
+ 
+select 'ÈëÉñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÈëÉñ' or ngram regexp '^ÈëÉñ_')
+group by year
+order by year desc;
+ 
+select 'ÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉÍ' or ngram regexp '^ÉÍ_')
+group by year
+order by year desc;
+ 
+select 'ÉÍÊ¶',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉÍÊ¶' or ngram regexp '^ÉÍÊ¶_')
+group by year
+order by year desc;
+ 
+select 'ÉÍêã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉÍêã' or ngram regexp '^ÉÍêã_')
+group by year
+order by year desc;
+ 
+select 'ÉĞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉĞ' or ngram regexp '^ÉĞ_')
+group by year
+order by year desc;
+ 
+select 'ÉÕ¸ßÏã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉÕ¸ßÏã' or ngram regexp '^ÉÕ¸ßÏã_')
+group by year
+order by year desc;
+ 
+select 'ÉİÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉİÍû' or ngram regexp '^ÉİÍû_')
+group by year
+order by year desc;
+ 
+select 'ÉêĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉêĞ»' or ngram regexp '^ÉêĞ»_')
+group by year
+order by year desc;
+ 
+select 'ÉìÕÅ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉìÕÅ' or ngram regexp '^ÉìÕÅ_')
+group by year
+order by year desc;
+ 
+select 'Éñ»êµßµ¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Éñ»êµßµ¹' or ngram regexp '^Éñ»êµßµ¹_')
+group by year
+order by year desc;
+ 
+select 'ÉñÍù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÉñÍù' or ngram regexp '^ÉñÍù_')
+group by year
+order by year desc;
+ 
+select 'Éõ¸Ğ»¶Î¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Éõ¸Ğ»¶Î¿' or ngram regexp '^Éõ¸Ğ»¶Î¿_')
+group by year
+order by year desc;
+ 
+select 'Ê¢ÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê¢ÔŞ' or ngram regexp '^Ê¢ÔŞ_')
+group by year
+order by year desc;
+ 
+select 'Ê©Àñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê©Àñ' or ngram regexp '^Ê©Àñ_')
+group by year
+order by year desc;
+ 
+select 'Ê®·ÖÂúÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê®·ÖÂúÒâ' or ngram regexp '^Ê®·ÖÂúÒâ_')
+group by year
+order by year desc;
+ 
+select 'Ê¾ºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê¾ºÃ' or ngram regexp '^Ê¾ºÃ_')
+group by year
+order by year desc;
+ 
+select 'Ê¾Í¬Òâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê¾Í¬Òâ' or ngram regexp '^Ê¾Í¬Òâ_')
+group by year
+order by year desc;
+ 
+select 'Ê¾Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê¾Ï²' or ngram regexp '^Ê¾Ï²_')
+group by year
+order by year desc;
+ 
+select 'ÊÍ·ÅÉÆÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊÍ·ÅÉÆÒâ' or ngram regexp '^ÊÍ·ÅÉÆÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÊÖÎè×ãµ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊÖÎè×ãµ¸' or ngram regexp '^ÊÖÎè×ãµ¸_')
+group by year
+order by year desc;
+ 
+select 'Ê×¿Ï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê×¿Ï' or ngram regexp '^Ê×¿Ï_')
+group by year
+order by year desc;
+ 
+select 'ÊØºò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊØºò' or ngram regexp '^ÊØºò_')
+group by year
+order by year desc;
+ 
+select 'ÊØËê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊØËê' or ngram regexp '^ÊØËê_')
+group by year
+order by year desc;
+ 
+select 'Êæ³©',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Êæ³©' or ngram regexp '^Êæ³©_')
+group by year
+order by year desc;
+ 
+select 'Êæ·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Êæ·ş' or ngram regexp '^Êæ·ş_')
+group by year
+order by year desc;
+ 
+select 'ÊæÌ¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊæÌ¹' or ngram regexp '^ÊæÌ¹_')
+group by year
+order by year desc;
+ 
+select 'ÊôÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊôÍû' or ngram regexp '^ÊôÍû_')
+group by year
+order by year desc;
+ 
+select 'ÊôÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÊôÒâ' or ngram regexp '^ÊôÒâ_')
+group by year
+order by year desc;
+ 
+select 'Ê÷±®Á¢´«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ê÷±®Á¢´«' or ngram regexp '^Ê÷±®Á¢´«_')
+group by year
+order by year desc;
+ 
+select 'Ë¬',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¬' or ngram regexp '^Ë¬_')
+group by year
+order by year desc;
+ 
+select 'Ë¬¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¬¿ì' or ngram regexp '^Ë¬¿ì_')
+group by year
+order by year desc;
+ 
+select 'Ë¬ĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¬ĞÄ' or ngram regexp '^Ë¬ĞÄ_')
+group by year
+order by year desc;
+ 
+select 'Ë¬âù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¬âù' or ngram regexp '^Ë¬âù_')
+group by year
+order by year desc;
+ 
+select 'ËµºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËµºÃ' or ngram regexp '^ËµºÃ_')
+group by year
+order by year desc;
+ 
+select 'ËµºÃ»°',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËµºÃ»°' or ngram regexp '^ËµºÃ»°_')
+group by year
+order by year desc;
+ 
+select 'ËµÍ×',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËµÍ×' or ngram regexp '^ËµÍ×_')
+group by year
+order by year desc;
+ 
+select 'ËµÏî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËµÏî' or ngram regexp '^ËµÏî_')
+group by year
+order by year desc;
+ 
+select 'Ë¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¼' or ngram regexp '^Ë¼_')
+group by year
+order by year desc;
+ 
+select 'Ë¼Áµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¼Áµ' or ngram regexp '^Ë¼Áµ_')
+group by year
+order by year desc;
+ 
+select 'Ë¼Ä½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¼Ä½' or ngram regexp '^Ë¼Ä½_')
+group by year
+order by year desc;
+ 
+select 'Ë¼Äî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ë¼Äî' or ngram regexp '^Ë¼Äî_')
+group by year
+order by year desc;
+ 
+select 'ËÉĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËÉĞÄ' or ngram regexp '^ËÉĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ËÌ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËÌ' or ngram regexp '^ËÌ_')
+group by year
+order by year desc;
+ 
+select 'ËÌÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËÌÑï' or ngram regexp '^ËÌÑï_')
+group by year
+order by year desc;
+ 
+select 'ËÌÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËÌÔŞ' or ngram regexp '^ËÌÔŞ_')
+group by year
+order by year desc;
+ 
+select 'ËÍÍùÓ­À´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËÍÍùÓ­À´' or ngram regexp '^ËÍÍùÓ­À´_')
+group by year
+order by year desc;
+ 
+select 'ËæĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËæĞÄ' or ngram regexp '^ËæĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ËìĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËìĞÄ' or ngram regexp '^ËìĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ËìÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ËìÒâ' or ngram regexp '^ËìÒâ_')
+group by year
+order by year desc;
+ 
+select 'Ì§°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì§°®' or ngram regexp '^Ì§°®_')
+group by year
+order by year desc;
+ 
+select 'Ì§¾Ù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì§¾Ù' or ngram regexp '^Ì§¾Ù_')
+group by year
+order by year desc;
+ 
+select 'Ì°',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì°' or ngram regexp '^Ì°_')
+group by year
+order by year desc;
+ 
+select 'Ì°Áµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì°Áµ' or ngram regexp '^Ì°Áµ_')
+group by year
+order by year desc;
+ 
+select 'Ì°Í¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì°Í¼' or ngram regexp '^Ì°Í¼_')
+group by year
+order by year desc;
+ 
+select 'Ì¾',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì¾' or ngram regexp '^Ì¾_')
+group by year
+order by year desc;
+ 
+select 'Ì¾·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì¾·ş' or ngram regexp '^Ì¾·ş_')
+group by year
+order by year desc;
+ 
+select 'Ì¾ÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì¾ÉÍ' or ngram regexp '^Ì¾ÉÍ_')
+group by year
+order by year desc;
+ 
+select 'Ì¾Îª¹ÛÖ¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì¾Îª¹ÛÖ¹' or ngram regexp '^Ì¾Îª¹ÛÖ¹_')
+group by year
+order by year desc;
+ 
+select 'Ì¾ÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ì¾ÏÛ' or ngram regexp '^Ì¾ÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ÌÕÈ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌÕÈ»' or ngram regexp '^ÌÕÈ»_')
+group by year
+order by year desc;
+ 
+select 'ÌÕÌÕ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌÕÌÕ' or ngram regexp '^ÌÕÌÕ_')
+group by year
+order by year desc;
+ 
+select 'ÌÕ×í',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌÕ×í' or ngram regexp '^ÌÕ×í_')
+group by year
+order by year desc;
+ 
+select 'ÌØĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌØĞí' or ngram regexp '^ÌØĞí_')
+group by year
+order by year desc;
+ 
+select 'ÌÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌÛ' or ngram regexp '^ÌÛ_')
+group by year
+order by year desc;
+ 
+select 'ÌÛ°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌÛ°®' or ngram regexp '^ÌÛ°®_')
+group by year
+order by year desc;
+ 
+select 'ÌÛÏ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌÛÏ§' or ngram regexp '^ÌÛÏ§_')
+group by year
+order by year desc;
+ 
+select 'Ìá³«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ìá³«' or ngram regexp '^Ìá³«_')
+group by year
+order by year desc;
+ 
+select 'ÌğË¿Ë¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌğË¿Ë¿' or ngram regexp '^ÌğË¿Ë¿_')
+group by year
+order by year desc;
+ 
+select 'Ìğ×Ì×Ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ìğ×Ì×Ì' or ngram regexp '^Ìğ×Ì×Ì_')
+group by year
+order by year desc;
+ 
+select 'ÌôÈı¼ğËÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌôÈı¼ğËÄ' or ngram regexp '^ÌôÈı¼ğËÄ_')
+group by year
+order by year desc;
+ 
+select 'ÌôÑÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÌôÑÛ' or ngram regexp '^ÌôÑÛ_')
+group by year
+order by year desc;
+ 
+select 'Í¨¹ı',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Í¨¹ı' or ngram regexp '^Í¨¹ı_')
+group by year
+order by year desc;
+ 
+select 'Í¨ÈÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Í¨ÈÚ' or ngram regexp '^Í¨ÈÚ_')
+group by year
+order by year desc;
+ 
+select 'Í¬Òâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Í¬Òâ' or ngram regexp '^Í¬Òâ_')
+group by year
+order by year desc;
+ 
+select 'ÍÂ¿Ú',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÂ¿Ú' or ngram regexp '^ÍÂ¿Ú_')
+group by year
+order by year desc;
+ 
+select 'ÍÂÆøÑïÃ¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÂÆøÑïÃ¼' or ngram regexp '^ÍÂÆøÑïÃ¼_')
+group by year
+order by year desc;
+ 
+select 'ÍÆ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÆ' or ngram regexp '^ÍÆ_')
+group by year
+order by year desc;
+ 
+select 'ÍÆ³ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÆ³ç' or ngram regexp '^ÍÆ³ç_')
+group by year
+order by year desc;
+ 
+select 'ÍÆ´÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÆ´÷' or ngram regexp '^ÍÆ´÷_')
+group by year
+order by year desc;
+ 
+select 'ÍÆĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÆĞí' or ngram regexp '^ÍÆĞí_')
+group by year
+order by year desc;
+ 
+select 'ÍÆÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÆÖØ' or ngram regexp '^ÍÆÖØ_')
+group by year
+order by year desc;
+ 
+select 'ÍÆ×ğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍÆ×ğ' or ngram regexp '^ÍÆ×ğ_')
+group by year
+order by year desc;
+ 
+select 'Íû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Íû' or ngram regexp '^Íû_')
+group by year
+order by year desc;
+ 
+select 'ÍûÑÛÓû´©',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍûÑÛÓû´©' or ngram regexp '^ÍûÑÛÓû´©_')
+group by year
+order by year desc;
+ 
+select 'ÍüºõËùÒÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍüºõËùÒÔ' or ngram regexp '^ÍüºõËùÒÔ_')
+group by year
+order by year desc;
+ 
+select 'ÍıÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÍıÏë' or ngram regexp '^ÍıÏë_')
+group by year
+order by year desc;
+ 
+select 'Î¬»¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Î¬»¤' or ngram regexp '^Î¬»¤_')
+group by year
+order by year desc;
+ 
+select 'Î·',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Î·' or ngram regexp '^Î·_')
+group by year
+order by year desc;
+ 
+select 'ÎÂ´æ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÎÂ´æ' or ngram regexp '^ÎÂ´æ_')
+group by year
+order by year desc;
+ 
+select 'ÎÊĞÄÎŞÀ¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÎÊĞÄÎŞÀ¢' or ngram regexp '^ÎÊĞÄÎŞÀ¢_')
+group by year
+order by year desc;
+ 
+select 'ÎŞÀ¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÎŞÀ¢' or ngram regexp '^ÎŞÀ¢_')
+group by year
+order by year desc;
+ 
+select 'ÎûÎû¹ş¹ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÎûÎû¹ş¹ş' or ngram regexp '^ÎûÎû¹ş¹ş_')
+group by year
+order by year desc;
+ 
+select 'Ï¡º±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï¡º±' or ngram regexp '^Ï¡º±_')
+group by year
+order by year desc;
+ 
+select 'Ï£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï£' or ngram regexp '^Ï£_')
+group by year
+order by year desc;
+ 
+select 'Ï£º±',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï£º±' or ngram regexp '^Ï£º±_')
+group by year
+order by year desc;
+ 
+select 'Ï£¼½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï£¼½' or ngram regexp '^Ï£¼½_')
+group by year
+order by year desc;
+ 
+select 'Ï£Í¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï£Í¼' or ngram regexp '^Ï£Í¼_')
+group by year
+order by year desc;
+ 
+select 'Ï£Íû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï£Íû' or ngram regexp '^Ï£Íû_')
+group by year
+order by year desc;
+ 
+select 'Ï§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï§' or ngram regexp '^Ï§_')
+group by year
+order by year desc;
+ 
+select 'Ï²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²' or ngram regexp '^Ï²_')
+group by year
+order by year desc;
+ 
+select 'Ï²°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²°®' or ngram regexp '^Ï²°®_')
+group by year
+order by year desc;
+ 
+select 'Ï²²»×Ô½û',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²²»×Ô½û' or ngram regexp '^Ï²²»×Ô½û_')
+group by year
+order by year desc;
+ 
+select 'Ï²²»×ÔÊ¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²²»×ÔÊ¤' or ngram regexp '^Ï²²»×ÔÊ¤_')
+group by year
+order by year desc;
+ 
+select 'Ï²³å³å',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²³å³å' or ngram regexp '^Ï²³å³å_')
+group by year
+order by year desc;
+ 
+select 'Ï²³öÍûÍâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²³öÍûÍâ' or ngram regexp '^Ï²³öÍûÍâ_')
+group by year
+order by year desc;
+ 
+select 'Ï²ºÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ºÃ' or ngram regexp '^Ï²ºÃ_')
+group by year
+order by year desc;
+ 
+select 'Ï²»¶',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²»¶' or ngram regexp '^Ï²»¶_')
+group by year
+order by year desc;
+ 
+select 'Ï²ÀÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ÀÖ' or ngram regexp '^Ï²ÀÖ_')
+group by year
+order by year desc;
+ 
+select 'Ï²Ã¼Ğ¦ÑÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²Ã¼Ğ¦ÑÛ' or ngram regexp '^Ï²Ã¼Ğ¦ÑÛ_')
+group by year
+order by year desc;
+ 
+select 'Ï²ÆøÑóÑó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ÆøÑóÑó' or ngram regexp '^Ï²ÆøÑóÑó_')
+group by year
+order by year desc;
+ 
+select 'Ï²ÉÏÃ¼ÉÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ÉÏÃ¼ÉÒ' or ngram regexp '^Ï²ÉÏÃ¼ÉÒ_')
+group by year
+order by year desc;
+ 
+select 'Ï²ÉÏĞÄÍ·',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ÉÏĞÄÍ·' or ngram regexp '^Ï²ÉÏĞÄÍ·_')
+group by year
+order by year desc;
+ 
+select 'Ï²ĞË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ĞË' or ngram regexp '^Ï²ĞË_')
+group by year
+order by year desc;
+ 
+select 'Ï²ĞÎÓÚÉ«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ĞÎÓÚÉ«' or ngram regexp '^Ï²ĞÎÓÚÉ«_')
+group by year
+order by year desc;
+ 
+select 'Ï²ĞÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ĞÒ' or ngram regexp '^Ï²ĞÒ_')
+group by year
+order by year desc;
+ 
+select 'Ï²ÑóÑó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ÑóÑó' or ngram regexp '^Ï²ÑóÑó_')
+group by year
+order by year desc;
+ 
+select 'Ï²Ò÷Ò÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²Ò÷Ò÷' or ngram regexp '^Ï²Ò÷Ò÷_')
+group by year
+order by year desc;
+ 
+select 'Ï²Ó¯Ó¯',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²Ó¯Ó¯' or ngram regexp '^Ï²Ó¯Ó¯_')
+group by year
+order by year desc;
+ 
+select 'Ï²ÔÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²ÔÃ' or ngram regexp '^Ï²ÔÃ_')
+group by year
+order by year desc;
+ 
+select 'Ï²×Ì×Ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²×Ì×Ì' or ngram regexp '^Ï²×Ì×Ì_')
+group by year
+order by year desc;
+ 
+select 'Ï²×Î×Î',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ï²×Î×Î' or ngram regexp '^Ï²×Î×Î_')
+group by year
+order by year desc;
+ 
+select 'ÏÔÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏÔÑï' or ngram regexp '^ÏÔÑï_')
+group by year
+order by year desc;
+ 
+select 'ÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏÛ' or ngram regexp '^ÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ÏÛÄ½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏÛÄ½' or ngram regexp '^ÏÛÄ½_')
+group by year
+order by year desc;
+ 
+select 'ÏàÖĞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏàÖĞ' or ngram regexp '^ÏàÖĞ_')
+group by year
+order by year desc;
+ 
+select 'Ïë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ïë' or ngram regexp '^Ïë_')
+group by year
+order by year desc;
+ 
+select 'ÏëÄî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏëÄî' or ngram regexp '^ÏëÄî_')
+group by year
+order by year desc;
+ 
+select 'ÏëÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏëÍû' or ngram regexp '^ÏëÍû_')
+group by year
+order by year desc;
+ 
+select 'Ïò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ïò' or ngram regexp '^Ïò_')
+group by year
+order by year desc;
+ 
+select 'Ïò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ïò' or ngram regexp '^Ïò_')
+group by year
+order by year desc;
+ 
+select 'ÏòÍù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÏòÍù' or ngram regexp '^ÏòÍù_')
+group by year
+order by year desc;
+ 
+select 'Ïò×Å',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ïò×Å' or ngram regexp '^Ïò×Å_')
+group by year
+order by year desc;
+ 
+select 'Ïú»ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ïú»ê' or ngram regexp '^Ïú»ê_')
+group by year
+order by year desc;
+ 
+select 'Ïû»ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ïû»ê' or ngram regexp '^Ïû»ê_')
+group by year
+order by year desc;
+ 
+select 'Ğ¢¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğ¢¾´' or ngram regexp '^Ğ¢¾´_')
+group by year
+order by year desc;
+ 
+select 'Ğ¢Ë³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğ¢Ë³' or ngram regexp '^Ğ¢Ë³_')
+group by year
+order by year desc;
+ 
+select 'Ğ´Òâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğ´Òâ' or ngram regexp '^Ğ´Òâ_')
+group by year
+order by year desc;
+ 
+select 'Ğ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğ»' or ngram regexp '^Ğ»_')
+group by year
+order by year desc;
+ 
+select 'Ğ»ÌìĞ»µØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğ»ÌìĞ»µØ' or ngram regexp '^Ğ»ÌìĞ»µØ_')
+group by year
+order by year desc;
+ 
+select 'Ğ»Ğ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğ»Ğ»' or ngram regexp '^Ğ»Ğ»_')
+group by year
+order by year desc;
+ 
+select 'ĞÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀ' or ngram regexp '^ĞÀ_')
+group by year
+order by year desc;
+ 
+select 'ĞÀÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀÉÍ' or ngram regexp '^ĞÀÉÍ_')
+group by year
+order by year desc;
+ 
+select 'ĞÀÎ¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀÎ¿' or ngram regexp '^ĞÀÎ¿_')
+group by year
+order by year desc;
+ 
+select 'ĞÀÏ²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀÏ²' or ngram regexp '^ĞÀÏ²_')
+group by year
+order by year desc;
+ 
+select 'ĞÀÏ²Èô¿ñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀÏ²Èô¿ñ' or ngram regexp '^ĞÀÏ²Èô¿ñ_')
+group by year
+order by year desc;
+ 
+select 'ĞÀÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀÏÛ' or ngram regexp '^ĞÀÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ĞÀĞÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÀĞÒ' or ngram regexp '^ĞÀĞÒ_')
+group by year
+order by year desc;
+ 
+select 'ĞÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÃ' or ngram regexp '^ĞÃ_')
+group by year
+order by year desc;
+ 
+select 'ĞÄ³ÛÉñÍù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄ³ÛÉñÍù' or ngram regexp '^ĞÄ³ÛÉñÍù_')
+group by year
+order by year desc;
+ 
+select 'ĞÄµ´Éñ³Û',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄµ´Éñ³Û' or ngram regexp '^ĞÄµ´Éñ³Û_')
+group by year
+order by year desc;
+ 
+select 'ĞÄ¸Ê',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄ¸Ê' or ngram regexp '^ĞÄ¸Ê_')
+group by year
+order by year desc;
+ 
+select 'ĞÄ¸ÊÇéÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄ¸ÊÇéÔ¸' or ngram regexp '^ĞÄ¸ÊÇéÔ¸_')
+group by year
+order by year desc;
+ 
+select 'ĞÄ»¨Å­·Å',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄ»¨Å­·Å' or ngram regexp '^ĞÄ»¨Å­·Å_')
+group by year
+order by year desc;
+ 
+select 'ĞÄ¿õÉñâù',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄ¿õÉñâù' or ngram regexp '^ĞÄ¿õÉñâù_')
+group by year
+order by year desc;
+ 
+select 'ĞÄÂúÒâ×ã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄÂúÒâ×ã' or ngram regexp '^ĞÄÂúÒâ×ã_')
+group by year
+order by year desc;
+ 
+select 'ĞÄÌÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄÌÛ' or ngram regexp '^ĞÄÌÛ_')
+group by year
+order by year desc;
+ 
+select 'ĞÄÏò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄÏò' or ngram regexp '^ĞÄÏò_')
+group by year
+order by year desc;
+ 
+select 'ĞÄ×í',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞÄ×í' or ngram regexp '^ĞÄ×í_')
+group by year
+order by year desc;
+ 
+select 'ĞË¸ß²ÉÁÒ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞË¸ß²ÉÁÒ' or ngram regexp '^ĞË¸ß²ÉÁÒ_')
+group by year
+order by year desc;
+ 
+select 'ĞĞÀñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞĞÀñ' or ngram regexp '^ĞĞÀñ_')
+group by year
+order by year desc;
+ 
+select 'Ğè',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğè' or ngram regexp '^Ğè_')
+group by year
+order by year desc;
+ 
+select 'ĞèÒª',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞèÒª' or ngram regexp '^ĞèÒª_')
+group by year
+order by year desc;
+ 
+select 'Ğí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğí' or ngram regexp '^Ğí_')
+group by year
+order by year desc;
+ 
+select 'Ğí¿É',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğí¿É' or ngram regexp '^Ğí¿É_')
+group by year
+order by year desc;
+ 
+select 'ĞùÈ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞùÈ»' or ngram regexp '^ĞùÈ»_')
+group by year
+order by year desc;
+ 
+select 'Ğüºì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ğüºì' or ngram regexp '^Ğüºì_')
+group by year
+order by year desc;
+ 
+select 'ĞüÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ĞüÉÍ' or ngram regexp '^ĞüÉÍ_')
+group by year
+order by year desc;
+ 
+select 'ÑÛ²ö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑÛ²ö' or ngram regexp '^ÑÛ²ö_')
+group by year
+order by year desc;
+ 
+select 'ÑÛºì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑÛºì' or ngram regexp '^ÑÛºì_')
+group by year
+order by year desc;
+ 
+select 'ÑÛÈÈ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑÛÈÈ' or ngram regexp '^ÑÛÈÈ_')
+group by year
+order by year desc;
+ 
+select 'ÑŞÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑŞÏÛ' or ngram regexp '^ÑŞÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ÑïÃ¼ÍÂÆø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑïÃ¼ÍÂÆø' or ngram regexp '^ÑïÃ¼ÍÂÆø_')
+group by year
+order by year desc;
+ 
+select 'ÑïÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑïÑï' or ngram regexp '^ÑïÑï_')
+group by year
+order by year desc;
+ 
+select 'ÑïÑïµÃÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑïÑïµÃÒâ' or ngram regexp '^ÑïÑïµÃÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÑïÑï×ÔµÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑïÑï×ÔµÃ' or ngram regexp '^ÑïÑï×ÔµÃ_')
+group by year
+order by year desc;
+ 
+select 'ÑóÑóµÃÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑóÑóµÃÒâ' or ngram regexp '^ÑóÑóµÃÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÑóÑó×ÔµÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑóÑó×ÔµÃ' or ngram regexp '^ÑóÑó×ÔµÃ_')
+group by year
+order by year desc;
+ 
+select 'Ñö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ñö' or ngram regexp '^Ñö_')
+group by year
+order by year desc;
+ 
+select 'ÑöÄ½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÑöÄ½' or ngram regexp '^ÑöÄ½_')
+group by year
+order by year desc;
+ 
+select 'Ò¡Í·°ÚÎ²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ò¡Í·°ÚÎ²' or ngram regexp '^Ò¡Í·°ÚÎ²_')
+group by year
+order by year desc;
+ 
+select 'Ò¡Í·»ÎÄÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ò¡Í·»ÎÄÔ' or ngram regexp '^Ò¡Í·»ÎÄÔ_')
+group by year
+order by year desc;
+ 
+select 'Òª',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Òª' or ngram regexp '^Òª_')
+group by year
+order by year desc;
+ 
+select 'Ò¹ÓĞËùÃÎ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ò¹ÓĞËùÃÎ' or ngram regexp '^Ò¹ÓĞËùÃÎ_')
+group by year
+order by year desc;
+ 
+select 'Ò»ÍùÇéÉî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ò»ÍùÇéÉî' or ngram regexp '^Ò»ÍùÇéÉî_')
+group by year
+order by year desc;
+ 
+select 'Ò¾',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ò¾' or ngram regexp '^Ò¾_')
+group by year
+order by year desc;
+ 
+select 'ÒÀÒÀ²»Éá',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒÀÒÀ²»Éá' or ngram regexp '^ÒÀÒÀ²»Éá_')
+group by year
+order by year desc;
+ 
+select 'ÒÀÔÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒÀÔÊ' or ngram regexp '^ÒÀÔÊ_')
+group by year
+order by year desc;
+ 
+select 'ÒÔÆÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒÔÆÚ' or ngram regexp '^ÒÔÆÚ_')
+group by year
+order by year desc;
+ 
+select 'ÒÔÇó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒÔÇó' or ngram regexp '^ÒÔÇó_')
+group by year
+order by year desc;
+ 
+select 'ÒâÓû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒâÓû' or ngram regexp '^ÒâÓû_')
+group by year
+order by year desc;
+ 
+select 'ÒçÃÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒçÃÀ' or ngram regexp '^ÒçÃÀ_')
+group by year
+order by year desc;
+ 
+select 'Òı¾±Æó´ı',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Òı¾±Æó´ı' or ngram regexp '^Òı¾±Æó´ı_')
+group by year
+order by year desc;
+ 
+select 'ÒıÁì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÒıÁì' or ngram regexp '^ÒıÁì_')
+group by year
+order by year desc;
+ 
+select 'Ó¦',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó¦' or ngram regexp '^Ó¦_')
+group by year
+order by year desc;
+ 
+select 'Ó¦³Ğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó¦³Ğ' or ngram regexp '^Ó¦³Ğ_')
+group by year
+order by year desc;
+ 
+select 'Ó¦ÏÂ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó¦ÏÂ' or ngram regexp '^Ó¦ÏÂ_')
+group by year
+order by year desc;
+ 
+select 'Ó¦Ğí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó¦Ğí' or ngram regexp '^Ó¦Ğí_')
+group by year
+order by year desc;
+ 
+select 'Ó¦ÔÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó¦ÔÊ' or ngram regexp '^Ó¦ÔÊ_')
+group by year
+order by year desc;
+ 
+select 'Ó¦×¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó¦×¼' or ngram regexp '^Ó¦×¼_')
+group by year
+order by year desc;
+ 
+select 'Ó­',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó­' or ngram regexp '^Ó­_')
+group by year
+order by year desc;
+ 
+select 'Ó­ºò',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó­ºò' or ngram regexp '^Ó­ºò_')
+group by year
+order by year desc;
+ 
+select 'Ó­½Ó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó­½Ó' or ngram regexp '^Ó­½Ó_')
+group by year
+order by year desc;
+ 
+select 'Ó­À´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó­À´' or ngram regexp '^Ó­À´_')
+group by year
+order by year desc;
+ 
+select 'Ó­åÂ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó­åÂ' or ngram regexp '^Ó­åÂ_')
+group by year
+order by year desc;
+ 
+select 'Óµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óµ' or ngram regexp '^Óµ_')
+group by year
+order by year desc;
+ 
+select 'Óµ´÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óµ´÷' or ngram regexp '^Óµ´÷_')
+group by year
+order by year desc;
+ 
+select 'Óµ»¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óµ»¤' or ngram regexp '^Óµ»¤_')
+group by year
+order by year desc;
+ 
+select 'Ó½ÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ó½ÔŞ' or ngram regexp '^Ó½ÔŞ_')
+group by year
+order by year desc;
+ 
+select 'ÓÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÓÃ' or ngram regexp '^ÓÃ_')
+group by year
+order by year desc;
+ 
+select 'ÓÃĞÄÁ¼¿à',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÓÃĞÄÁ¼¿à' or ngram regexp '^ÓÃĞÄÁ¼¿à_')
+group by year
+order by year desc;
+ 
+select 'ÓĞĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÓĞĞÄ' or ngram regexp '^ÓĞĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ÓĞÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÓĞÒâ' or ngram regexp '^ÓĞÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÓáÔÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÓáÔÊ' or ngram regexp '^ÓáÔÊ_')
+group by year
+order by year desc;
+ 
+select 'Óä',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óä' or ngram regexp '^Óä_')
+group by year
+order by year desc;
+ 
+select 'Óä¿ì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óä¿ì' or ngram regexp '^Óä¿ì_')
+group by year
+order by year desc;
+ 
+select 'ÓäÔÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÓäÔÃ' or ngram regexp '^ÓäÔÃ_')
+group by year
+order by year desc;
+ 
+select 'Óû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óû' or ngram regexp '^Óû_')
+group by year
+order by year desc;
+ 
+select 'Óş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Óş' or ngram regexp '^Óş_')
+group by year
+order by year desc;
+ 
+select 'Ô¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ô¸' or ngram regexp '^Ô¸_')
+group by year
+order by year desc;
+ 
+select 'Ô¸Òâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ô¸Òâ' or ngram regexp '^Ô¸Òâ_')
+group by year
+order by year desc;
+ 
+select 'Ô¾Ô¾ÓûÊÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ô¾Ô¾ÓûÊÔ' or ngram regexp '^Ô¾Ô¾ÓûÊÔ_')
+group by year
+order by year desc;
+ 
+select 'ÔÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÃ' or ngram regexp '^ÔÃ_')
+group by year
+order by year desc;
+ 
+select 'ÔÃ·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÃ·ş' or ngram regexp '^ÔÃ·ş_')
+group by year
+order by year desc;
+ 
+select 'ÔÊ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÊ' or ngram regexp '^ÔÊ_')
+group by year
+order by year desc;
+ 
+select 'ÔÊĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÊĞí' or ngram regexp '^ÔÊĞí_')
+group by year
+order by year desc;
+ 
+select 'ÔÊ×¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÊ×¼' or ngram regexp '^ÔÊ×¼_')
+group by year
+order by year desc;
+ 
+select 'ÔÚºõ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÚºõ' or ngram regexp '^ÔÚºõ_')
+group by year
+order by year desc;
+ 
+select 'ÔÚĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÚĞÄ' or ngram regexp '^ÔÚĞÄ_')
+group by year
+order by year desc;
+ 
+select 'ÔÚÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔÚÒâ' or ngram regexp '^ÔÚÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞ' or ngram regexp '^ÔŞ_')
+group by year
+order by year desc;
+ 
+select 'ÔŞ³É',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞ³É' or ngram regexp '^ÔŞ³É_')
+group by year
+order by year desc;
+ 
+select 'ÔŞ·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞ·ş' or ngram regexp '^ÔŞ·ş_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÃÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÃÀ' or ngram regexp '^ÔŞÃÀ_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÄ½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÄ½' or ngram regexp '^ÔŞÄ½_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÅå',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÅå' or ngram regexp '^ÔŞÅå_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÉÍ' or ngram regexp '^ÔŞÉÍ_')
+group by year
+order by year desc;
+ 
+select 'ÔŞËÌ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞËÌ' or ngram regexp '^ÔŞËÌ_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÌ¾',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÌ¾' or ngram regexp '^ÔŞÌ¾_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÍ¬',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÍ¬' or ngram regexp '^ÔŞÍ¬_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÏÛ' or ngram regexp '^ÔŞÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ÔŞĞí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞĞí' or ngram regexp '^ÔŞĞí_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÑï' or ngram regexp '^ÔŞÑï_')
+group by year
+order by year desc;
+ 
+select 'ÔŞÓş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÔŞÓş' or ngram regexp '^ÔŞÓş_')
+group by year
+order by year desc;
+ 
+select 'Õ´Õ´×ÔÏ²',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Õ´Õ´×ÔÏ²' or ngram regexp '^Õ´Õ´×ÔÏ²_')
+group by year
+order by year desc;
+ 
+select 'ÕÕ×¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÕÕ×¼' or ngram regexp '^ÕÕ×¼_')
+group by year
+order by year desc;
+ 
+select 'ÕÛ·ş',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÕÛ·ş' or ngram regexp '^ÕÛ·ş_')
+group by year
+order by year desc;
+ 
+select 'Õä',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Õä' or ngram regexp '^Õä_')
+group by year
+order by year desc;
+ 
+select 'Õä°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Õä°®' or ngram regexp '^Õä°®_')
+group by year
+order by year desc;
+ 
+select 'ÕäÊÓ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÕäÊÓ' or ngram regexp '^ÕäÊÓ_')
+group by year
+order by year desc;
+ 
+select 'ÕäÏ§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÕäÏ§' or ngram regexp '^ÕäÏ§_')
+group by year
+order by year desc;
+ 
+select 'ÕäÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÕäÖØ' or ngram regexp '^ÕäÖØ_')
+group by year
+order by year desc;
+ 
+select 'ÕıÖĞÏÂ»³',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÕıÖĞÏÂ»³' or ngram regexp '^ÕıÖĞÏÂ»³_')
+group by year
+order by year desc;
+ 
+select 'Ö§³Ö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ö§³Ö' or ngram regexp '^Ö§³Ö_')
+group by year
+order by year desc;
+ 
+select 'ÖªÀäÖªÈÈ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖªÀäÖªÈÈ' or ngram regexp '^ÖªÀäÖªÈÈ_')
+group by year
+order by year desc;
+ 
+select 'ÖªÀä×ÅÈÈ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖªÀä×ÅÈÈ' or ngram regexp '^ÖªÀä×ÅÈÈ_')
+group by year
+order by year desc;
+ 
+select 'Öª×ã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Öª×ã' or ngram regexp '^Öª×ã_')
+group by year
+order by year desc;
+ 
+select 'Ö¸¿¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ö¸¿¿' or ngram regexp '^Ö¸¿¿_')
+group by year
+order by year desc;
+ 
+select 'Ö¸Íû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ö¸Íû' or ngram regexp '^Ö¸Íû_')
+group by year
+order by year desc;
+ 
+select 'Ö¾Ô¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ö¾Ô¸' or ngram regexp '^Ö¾Ô¸_')
+group by year
+order by year desc;
+ 
+select 'Ö¿°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ö¿°®' or ngram regexp '^Ö¿°®_')
+group by year
+order by year desc;
+ 
+select 'ÖÂºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖÂºØ' or ngram regexp '^ÖÂºØ_')
+group by year
+order by year desc;
+ 
+select 'ÖÂ¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖÂ¾´' or ngram regexp '^ÖÂ¾´_')
+group by year
+order by year desc;
+ 
+select 'ÖÂĞ»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖÂĞ»' or ngram regexp '^ÖÂĞ»_')
+group by year
+order by year desc;
+ 
+select 'ÖĞÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖĞÒâ' or ngram regexp '^ÖĞÒâ_')
+group by year
+order by year desc;
+ 
+select 'ÖÓ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖÓ' or ngram regexp '^ÖÓ_')
+group by year
+order by year desc;
+ 
+select 'ÖÓ°®',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖÓ°®' or ngram regexp '^ÖÓ°®_')
+group by year
+order by year desc;
+ 
+select 'ÖÓÇé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖÓÇé' or ngram regexp '^ÖÓÇé_')
+group by year
+order by year desc;
+ 
+select 'ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖØ' or ngram regexp '^ÖØ_')
+group by year
+order by year desc;
+ 
+select 'ÖØÊÓ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖØÊÓ' or ngram regexp '^ÖØÊÓ_')
+group by year
+order by year desc;
+ 
+select 'ÖØÔÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖØÔÚ' or ngram regexp '^ÖØÔÚ_')
+group by year
+order by year desc;
+ 
+select 'ÖõÄ¿',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖõÄ¿' or ngram regexp '^ÖõÄ¿_')
+group by year
+order by year desc;
+ 
+select 'ÖõÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÖõÍû' or ngram regexp '^ÖõÍû_')
+group by year
+order by year desc;
+ 
+select 'Ö÷³Ö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ö÷³Ö' or ngram regexp '^Ö÷³Ö_')
+group by year
+order by year desc;
+ 
+select '×¢',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¢' or ngram regexp '^×¢_')
+group by year
+order by year desc;
+ 
+select '×¢Òâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¢Òâ' or ngram regexp '^×¢Òâ_')
+group by year
+order by year desc;
+ 
+select '×¢ÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¢ÖØ' or ngram regexp '^×¢ÖØ_')
+group by year
+order by year desc;
+ 
+select '×£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×£' or ngram regexp '^×£_')
+group by year
+order by year desc;
+ 
+select '×£¸£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×£¸£' or ngram regexp '^×£¸£_')
+group by year
+order by year desc;
+ 
+select '×£ºØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×£ºØ' or ngram regexp '^×£ºØ_')
+group by year
+order by year desc;
+ 
+select '×£ËÌ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×£ËÌ' or ngram regexp '^×£ËÌ_')
+group by year
+order by year desc;
+ 
+select '×£Ô¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×£Ô¸' or ngram regexp '^×£Ô¸_')
+group by year
+order by year desc;
+ 
+select '×¥',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¥' or ngram regexp '^×¥_')
+group by year
+order by year desc;
+ 
+select '×¥½ô',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¥½ô' or ngram regexp '^×¥½ô_')
+group by year
+order by year desc;
+ 
+select '×¼',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¼' or ngram regexp '^×¼_')
+group by year
+order by year desc;
+ 
+select '×¼Ğí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¼Ğí' or ngram regexp '^×¼Ğí_')
+group by year
+order by year desc;
+ 
+select '×¼Óè',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×¼Óè' or ngram regexp '^×¼Óè_')
+group by year
+order by year desc;
+ 
+select '×ÅÃÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÅÃÔ' or ngram regexp '^×ÅÃÔ_')
+group by year
+order by year desc;
+ 
+select '×ÅÏë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÅÏë' or ngram regexp '^×ÅÏë_')
+group by year
+order by year desc;
+ 
+select '×ÅÑÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÅÑÛ' or ngram regexp '^×ÅÑÛ_')
+group by year
+order by year desc;
+ 
+select '×ÅÑÛÓÚ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÅÑÛÓÚ' or ngram regexp '^×ÅÑÛÓÚ_')
+group by year
+order by year desc;
+ 
+select '×ÔµÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÔµÃ' or ngram regexp '^×ÔµÃ_')
+group by year
+order by year desc;
+ 
+select '×ÔµÃÆäÀÖ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÔµÃÆäÀÖ' or ngram regexp '^×ÔµÃÆäÀÖ_')
+group by year
+order by year desc;
+ 
+select '×Ô¸æ·ÜÓÂ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×Ô¸æ·ÜÓÂ' or ngram regexp '^×Ô¸æ·ÜÓÂ_')
+group by year
+order by year desc;
+ 
+select '×ÔÂú',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÔÂú' or ngram regexp '^×ÔÂú_')
+group by year
+order by year desc;
+ 
+select '×ÔÃùµÃÒâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÔÃùµÃÒâ' or ngram regexp '^×ÔÃùµÃÒâ_')
+group by year
+order by year desc;
+ 
+select '×ÔÈÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÔÈÏ' or ngram regexp '^×ÔÈÏ_')
+group by year
+order by year desc;
+ 
+select '×ÔÔ¸',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÔÔ¸' or ngram regexp '^×ÔÔ¸_')
+group by year
+order by year desc;
+ 
+select '×Ô×ã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×Ô×ã' or ngram regexp '^×Ô×ã_')
+group by year
+order by year desc;
+ 
+select '×ÚÑö',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ÚÑö' or ngram regexp '^×ÚÑö_')
+group by year
+order by year desc;
+ 
+select '×íĞÄ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×íĞÄ' or ngram regexp '^×íĞÄ_')
+group by year
+order by year desc;
+ 
+select '×ğ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ğ' or ngram regexp '^×ğ_')
+group by year
+order by year desc;
+ 
+select '×ğ³ç',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ğ³ç' or ngram regexp '^×ğ³ç_')
+group by year
+order by year desc;
+ 
+select '×ğ¾´',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ğ¾´' or ngram regexp '^×ğ¾´_')
+group by year
+order by year desc;
+ 
+select '×ğÖØ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='×ğÖØ' or ngram regexp '^×ğÖØ_')
+group by year
+order by year desc;
+ 
+select 'ÙÏ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÙÏ' or ngram regexp '^ÙÏ_')
+group by year
+order by year desc;
+ 
+select 'ÙİÍ¬',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÙİÍ¬' or ngram regexp '^ÙİÍ¬_')
+group by year
+order by year desc;
+ 
+select 'Ú–Íû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ú–Íû' or ngram regexp '^Ú–Íû_')
+group by year
+order by year desc;
+ 
+select 'Ú©¸è',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ú©¸è' or ngram regexp '^Ú©¸è_')
+group by year
+order by year desc;
+ 
+select 'ÚË',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÚË' or ngram regexp '^ÚË_')
+group by year
+order by year desc;
+ 
+select 'ÛÁ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ÛÁ' or ngram regexp '^ÛÁ_')
+group by year
+order by year desc;
+ 
+select 'Ü£',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='Ü£' or ngram regexp '^Ü£_')
+group by year
+order by year desc;
+ 
+select 'İÓÄî',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='İÓÄî' or ngram regexp '^İÓÄî_')
+group by year
+order by year desc;
+ 
+select 'ŞíÑï',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ŞíÑï' or ngram regexp '^ŞíÑï_')
+group by year
+order by year desc;
+ 
+select 'ßµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßµ' or ngram regexp '^ßµ_')
+group by year
+order by year desc;
+ 
+select 'ßµ°İ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßµ°İ' or ngram regexp '^ßµ°İ_')
+group by year
+order by year desc;
+ 
+select 'ßµÊ×',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßµÊ×' or ngram regexp '^ßµÊ×_')
+group by year
+order by year desc;
+ 
+select 'ßµÍ·',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßµÍ·' or ngram regexp '^ßµÍ·_')
+group by year
+order by year desc;
+ 
+select 'ßà',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßà' or ngram regexp '^ßà_')
+group by year
+order by year desc;
+ 
+select 'ßõßõ³ÆÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßõßõ³ÆÏÛ' or ngram regexp '^ßõßõ³ÆÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ßõßõ³ÆÔŞ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ßõßõ³ÆÔŞ' or ngram regexp '^ßõßõ³ÆÔŞ_')
+group by year
+order by year desc;
+ 
+select 'à¯',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='à¯' or ngram regexp '^à¯_')
+group by year
+order by year desc;
+ 
+select 'àµ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='àµ' or ngram regexp '^àµ_')
+group by year
+order by year desc;
+ 
+select 'á^',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='á^' or ngram regexp '^á^_')
+group by year
+order by year desc;
+ 
+select 'áè',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='áè' or ngram regexp '^áè_')
+group by year
+order by year desc;
+ 
+select 'â¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='â¹' or ngram regexp '^â¹_')
+group by year
+order by year desc;
+ 
+select 'âÀ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âÀ' or ngram regexp '^âÀ_')
+group by year
+order by year desc;
+ 
+select 'âÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âÛ' or ngram regexp '^âÛ_')
+group by year
+order by year desc;
+ 
+select 'âå',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âå' or ngram regexp '^âå_')
+group by year
+order by year desc;
+ 
+select 'âí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âí' or ngram regexp '^âí_')
+group by year
+order by year desc;
+ 
+select 'âíÔ¾',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âíÔ¾' or ngram regexp '^âíÔ¾_')
+group by year
+order by year desc;
+ 
+select 'âóÈ»×Ô×ã',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âóÈ»×Ô×ã' or ngram regexp '^âóÈ»×Ô×ã_')
+group by year
+order by year desc;
+ 
+select 'âø',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âø' or ngram regexp '^âø_')
+group by year
+order by year desc;
+ 
+select 'âùÈ»×ÔµÃ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âùÈ»×ÔµÃ' or ngram regexp '^âùÈ»×ÔµÃ_')
+group by year
+order by year desc;
+ 
+select 'âı',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='âı' or ngram regexp '^âı_')
+group by year
+order by year desc;
+ 
+select 'ã¤',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ã¤' or ngram regexp '^ã¤_')
+group by year
+order by year desc;
+ 
+select 'ã«',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ã«' or ngram regexp '^ã«_')
+group by year
+order by year desc;
+ 
+select 'ã«Òâ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ã«Òâ' or ngram regexp '^ã«Òâ_')
+group by year
+order by year desc;
+ 
+select 'ã»',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ã»' or ngram regexp '^ã»_')
+group by year
+order by year desc;
+ 
+select 'ã¿ã½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ã¿ã½' or ngram regexp '^ã¿ã½_')
+group by year
+order by year desc;
+ 
+select 'åÂ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='åÂ' or ngram regexp '^åÂ_')
+group by year
+order by year desc;
+ 
+select 'æÔ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='æÔ' or ngram regexp '^æÔ_')
+group by year
+order by year desc;
+ 
+select 'ç¹',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ç¹' or ngram regexp '^ç¹_')
+group by year
+order by year desc;
+ 
+select 'êé',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='êé' or ngram regexp '^êé_')
+group by year
+order by year desc;
+ 
+select 'êéêì',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='êéêì' or ngram regexp '^êéêì_')
+group by year
+order by year desc;
+ 
+select 'êû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='êû' or ngram regexp '^êû_')
+group by year
+order by year desc;
+ 
+select 'êûÀÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='êûÀÍ' or ngram regexp '^êûÀÍ_')
+group by year
+order by year desc;
+ 
+select 'êûÉÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='êûÉÍ' or ngram regexp '^êûÉÍ_')
+group by year
+order by year desc;
+ 
+select 'ëÍ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ëÍ' or ngram regexp '^ëÍ_')
+group by year
+order by year desc;
+ 
+select 'ì§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ì§' or ngram regexp '^ì§_')
+group by year
+order by year desc;
+ 
+select 'ì§Ä½',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ì§Ä½' or ngram regexp '^ì§Ä½_')
+group by year
+order by year desc;
+ 
+select 'ì§ÏÛ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ì§ÏÛ' or ngram regexp '^ì§ÏÛ_')
+group by year
+order by year desc;
+ 
+select 'ìë',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ìë' or ngram regexp '^ìë_')
+group by year
+order by year desc;
+ 
+select 'ìó',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ìó' or ngram regexp '^ìó_')
+group by year
+order by year desc;
+ 
+select 'íí',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='íí' or ngram regexp '^íí_')
+group by year
+order by year desc;
+ 
+select 'î„',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='î„' or ngram regexp '^î„_')
+group by year
+order by year desc;
+ 
+select 'ïñ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ïñ' or ngram regexp '^ïñ_')
+group by year
+order by year desc;
+ 
+select 'ğÀÍû',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ğÀÍû' or ngram regexp '^ğÀÍû_')
+group by year
+order by year desc;
+ 
+select 'ñ´´÷',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ñ´´÷' or ngram regexp '^ñ´´÷_')
+group by year
+order by year desc;
+ 
+select 'ñÏñÅ',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ñÏñÅ' or ngram regexp '^ñÏñÅ_')
+group by year
+order by year desc;
+ 
+select 'õª',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='õª' or ngram regexp '^õª_')
+group by year
+order by year desc;
+ 
+select 'ö§',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ö§' or ngram regexp '^ö§_')
+group by year
+order by year desc;
+ 

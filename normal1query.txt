@@ -1,0 +1,7 @@
+use ngram
+
+select 'ак',year,sum(match_count), sum(volume_count)
+from cn1gram
+where (year >= 1900 and year <= 2000) and (ngram ='ак' or ngram regexp '^ак_')
+group by year
+order by year desc;
