@@ -1,9 +1,9 @@
-读入详细数据
+# 读入详细数据
 
 negdetail <- read.table("negclean.txt", header = F, stringsAsFactors = F)
 posdetail <- read.table("posclean.txt", header = F, stringsAsFactors = F)
 
-生成数据框
+# 生成数据框
 
 rowlabel = seq(1900,2000)
 posdf <- data.frame(rowlabel)
@@ -32,7 +32,7 @@ for (i in 1:length(neglabel)){
 }
 names(negdf) <- c("year",neglabel)
 
-写出数据
+# 写出数据
 
 write.csv(negdf, file = "negdf.csv", row.names = F)
 write.csv(posdf, file = "posdf.csv", row.names = F)

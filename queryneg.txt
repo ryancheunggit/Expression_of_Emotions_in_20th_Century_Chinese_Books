@@ -1878,15 +1878,15 @@ where (year >= 1900 and year <= 2000) and (ngram ='¸ĞÉË' or ngram regexp '^¸ĞÉË_
 group by year
 order by year desc;
  
-select '¸ø',year,sum(match_count), sum(volume_count)
+select 'µ±Í·°ôºÈ',year,sum(match_count), sum(volume_count)
 from cn1gram
-where (year >= 1900 and year <= 2000) and (ngram ='¸ø' or ngram regexp '^¸ø_')
+where (year >= 1900 and year <= 2000) and (ngram ='µ±Í·°ôºÈ' or ngram regexp '^µ±Í·°ôºÈ_')
 group by year
 order by year desc;
  
-select '¸ø',year,sum(match_count), sum(volume_count)
+select '¸øµãÑÕÉ«',year,sum(match_count), sum(volume_count)
 from cn1gram
-where (year >= 1900 and year <= 2000) and (ngram ='¸ø' or ngram regexp '^¸ø_')
+where (year >= 1900 and year <= 2000) and (ngram ='¸øµãÑÕÉ«' or ngram regexp '^¸øµãÑÕÉ«_')
 group by year
 order by year desc;
  
@@ -5352,9 +5352,9 @@ where (year >= 1900 and year <= 2000) and (ngram ='Ïë²»¿ª' or ngram regexp '^Ïë²
 group by year
 order by year desc;
  
-select 'Ïò',year,sum(match_count), sum(volume_count)
+select 'ÎÊ×ï',year,sum(match_count), sum(volume_count)
 from cn1gram
-where (year >= 1900 and year <= 2000) and (ngram ='Ïò' or ngram regexp '^Ïò_')
+where (year >= 1900 and year <= 2000) and (ngram ='ÎÊ×ï' or ngram regexp '^ÎÊ×ï_')
 group by year
 order by year desc;
  

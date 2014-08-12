@@ -1,4 +1,4 @@
-# Expression of Emotions in 20th Century Chinese Books
+﻿# Expression of Emotions in 20th Century Chinese Books
 
 
 ## 1 下载google ngram数据集中Chinese 1gram部分，并解压   
@@ -10,7 +10,15 @@
 ## 3 下载知网HowNet中文情感词表    
 下载地址：http://www.keenage.com/            
 正面情感词表：cnpositiveemotionwords.txt              
-负面情感词表：cnnegitiveemotionwords.txt             
+负面情感词表：cnnegitiveemotionwords.txt      
+对词表几个特殊情况略有修改：   
+正面情感词表中：                   
+“向...倾斜”改为“倾斜”
+“给...留面子”改为“给面子”
+负面情感词表中：         
+“给 ... 当头棒喝”改为“当头棒喝”          
+“给 ... 一点颜色看看”改为“给点颜色”           
+“向 ... 问罪”改为“问罪”             
 
 ## 3 将1gram数据导入数据库:    
 

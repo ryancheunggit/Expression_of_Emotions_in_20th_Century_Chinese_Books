@@ -1032,9 +1032,9 @@ where (year >= 1900 and year <= 2000) and (ngram ='歌颂' or ngram regexp '^歌颂_
 group by year
 order by year desc;
  
-select '给',year,sum(match_count), sum(volume_count)
+select '留面子',year,sum(match_count), sum(volume_count)
 from cn1gram
-where (year >= 1900 and year <= 2000) and (ngram ='给' or ngram regexp '^给_')
+where (year >= 1900 and year <= 2000) and (ngram ='留面子' or ngram regexp '^留面子_')
 group by year
 order by year desc;
  
@@ -3624,9 +3624,9 @@ where (year >= 1900 and year <= 2000) and (ngram ='向' or ngram regexp '^向_')
 group by year
 order by year desc;
  
-select '向',year,sum(match_count), sum(volume_count)
+select '倾斜',year,sum(match_count), sum(volume_count)
 from cn1gram
-where (year >= 1900 and year <= 2000) and (ngram ='向' or ngram regexp '^向_')
+where (year >= 1900 and year <= 2000) and (ngram ='倾斜' or ngram regexp '^倾斜_')
 group by year
 order by year desc;
  
