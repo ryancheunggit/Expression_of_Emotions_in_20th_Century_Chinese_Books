@@ -22,6 +22,8 @@ poslm <- lm(freqpos~pos[,1])
 neglm <- lm(-freqneg~neg[,1])
 neglmp <- lm(freqneg~neg[,1])
 sentlm <- lm(sent~pos[,1])
+negzscore <- (freqneg - mean(freqneg))/sd(freqneg)
+poszscore <- (freqpos - mean(freqpos))/sd(freqpos)
 ```
 ### 绘制图
 
@@ -81,10 +83,12 @@ negdf <- read.csv("negdf.csv", stringsAsFactors = F, header = T)
 poscor <- rep(0,ncol(posdf)-1)
 negcor <- rep(0,ncol(negdf)-1)
 for (i in 2:ncol(posdf)){
-  poscor[i-1] = cor(freqpos, posdf[,i]/total[,3])
+  freq <- posdf[,i]/total[,3]
+  poscor[i-1] = cor(poszscore, (freq-mean(freq))/sd(freq))
 }
 for (i in 2:ncol(negdf)){
-  negcor[i-1] = cor(freqneg, negdf[,i]/total[,3])
+  freq <- negdf[,i]/total[,3]
+  negcor[i-1] = cor(negzscore, (freq-mean(freq))/sd(freq))
 }
 ```
 
@@ -94,7 +98,7 @@ for (i in 2:ncol(negdf)){
 top10poscorscore <- sort(poscor, T)[1:10]
 top10posterm <- rep("",10)
 for (i in 1:10){
-  top10posterm[i] = names(posdf)[which(poscor == top10poscorscore[i])+1]
+  top10posterm[i] <- names(posdf)[which(poscor == top10poscorscore[i])+1]
 }
 top10posterm
 ```
@@ -107,7 +111,7 @@ top10posterm
 top10negcorscore <- sort(negcor, T)[1:10]
 top10negterm <- rep("",10)
 for (i in 1:10){
-  top10negterm[i] = names(negdf)[which(negcor == top10negcorscore[i])+1]
+  top10negterm[i] <- names(negdf)[which(negcor == top10negcorscore[i])+1]
 }
 top10negterm
 ```
@@ -119,9 +123,37 @@ top10negterm
 
 
 ```r
-plot(pos[,1], freqpos, pch = 19, col = 'red')
-points(pos[,1], 23*posdf[,419]/total[,3], pch = 19, col = 'green')
+freq <- posdf$好/total[,3]
+zscore <- (freq-mean(freq))/sd(freq)
+plot(pos[,1], poszscore, pch = 19, col = 'red')
+points(pos[,1], zscore, pch = 19, col = 'green')
 ```
 
 ![plot of chunk unnamed-chunk-10](./analysis_files/figure-html/unnamed-chunk-10.png) 
+
+```r
+cor(poszscore, zscore)
+```
+
+```
+## [1] 0.8613
+```
+
+
+```r
+freq <- negdf$沉重/total[,3]
+zscore <- (freq-mean(freq))/sd(freq)
+plot(neg[,1], negzscore, pch = 19, col = 'red')
+points(pos[,1], zscore, pch = 19, col = 'purple')
+```
+
+![plot of chunk unnamed-chunk-11](./analysis_files/figure-html/unnamed-chunk-11.png) 
+
+```r
+cor(poszscore, zscore)
+```
+
+```
+## [1] 0.7709
+```
 
