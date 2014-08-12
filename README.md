@@ -7,7 +7,7 @@
 
 ![plot of chunk unnamed-chunk-6](./analysis_files/figure-html/unnamed-chunk-6.png) 
 
-总体而言情感值呈现上升趋势，在文化大革命（1966-1976）年检出现些许跌落。。。  
+总体而言情感值呈现上升趋势，在1940-1960年间有显著上升迹象，文化大革命（1966-1976）年间出现显著跌落。。。  
 
 see log.md for how this plot is generated.
 
