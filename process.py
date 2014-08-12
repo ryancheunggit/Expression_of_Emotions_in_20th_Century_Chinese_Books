@@ -1,5 +1,5 @@
-pos = file('neg.txt')
-neg = file('pos.txt')
+pos = file('pos.txt')
+neg = file('neg.txt')
 
 f = open('posclean.txt','w')
 for line in pos:
