@@ -30,6 +30,15 @@ poszscore <- (freqpos - mean(freqpos))/sd(freqpos)
 ```
 ### 绘制图
 
+情绪差值的标准值图：
+```{r}
+sent <- (sent - mean(sent))/sd(sent)
+plot(pos[,1], sent, pch = 19, col = 'black', xlab = "year", ylab = "postive - negative")
+sentlm <- lm(sent~pos[,1])
+abline(sentlm$coefficients[1],sentlm$coefficients[2], col = 'black', lty = 2, lwd = 2)
+```
+
+
 负面情感词各年频次：
 ```{r}
 
@@ -115,4 +124,5 @@ plot(neg[,1], negzscore, pch = 19, col = 'red')
 points(pos[,1], zscore, pch = 19, col = 'purple')
 cor(poszscore, zscore)
 ```
+
 

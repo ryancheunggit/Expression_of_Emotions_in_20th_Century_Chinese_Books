@@ -27,6 +27,18 @@ poszscore <- (freqpos - mean(freqpos))/sd(freqpos)
 ```
 ### 绘制图
 
+情绪差值的标准值图：
+
+```r
+sent <- (sent - mean(sent))/sd(sent)
+plot(pos[,1], sent, pch = 19, col = 'black', xlab = "year", ylab = "postive - negative")
+sentlm <- lm(sent~pos[,1])
+abline(sentlm$coefficients[1],sentlm$coefficients[2], col = 'black', lty = 2, lwd = 2)
+```
+
+![plot of chunk unnamed-chunk-3](./analysis_files/figure-html/unnamed-chunk-3.png) 
+
+
 负面情感词各年频次：
 
 ```r
@@ -34,7 +46,7 @@ plot(neg[,1], freqneg, pch = 19, col = 'blue')
 abline(neglmp$coefficients[1],neglmp$coefficients[2], col = 'blue', lty = 2, lwd = 2)
 ```
 
-![plot of chunk unnamed-chunk-3](./analysis_files/figure-html/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-4](./analysis_files/figure-html/unnamed-chunk-4.png) 
 
 正面情感词各年频次：
 
@@ -43,7 +55,7 @@ plot(pos[,1], freqpos, pch = 19, col = 'red')
 abline(poslm$coefficients[1],poslm$coefficients[2], col = 'red', lty = 2, lwd = 2)
 ```
 
-![plot of chunk unnamed-chunk-4](./analysis_files/figure-html/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-5](./analysis_files/figure-html/unnamed-chunk-5.png) 
 
 情感值（正面情感各年频次-负面情感各年频次）随年份的变化：
 
@@ -52,7 +64,7 @@ plot(pos[,1], sent, pch = 19, col = 'black')
 abline(sentlm$coefficients[1],sentlm$coefficients[2], col = 'red', lty = 2, lwd = 2)
 ```
 
-![plot of chunk unnamed-chunk-5](./analysis_files/figure-html/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-6](./analysis_files/figure-html/unnamed-chunk-6.png) 
 
 三者放在一张图上：
 
@@ -66,7 +78,7 @@ points(pos[,1], freqpos, col = 'red', pch = 19)
 abline(poslm$coefficients[1],poslm$coefficients[2], col = 'red', lty = 2, lwd = 2)
 ```
 
-![plot of chunk unnamed-chunk-6](./analysis_files/figure-html/unnamed-chunk-6.png) 
+![plot of chunk unnamed-chunk-7](./analysis_files/figure-html/unnamed-chunk-7.png) 
 
 
 ## 相关性检验
@@ -129,7 +141,7 @@ plot(pos[,1], poszscore, pch = 19, col = 'red')
 points(pos[,1], zscore, pch = 19, col = 'green')
 ```
 
-![plot of chunk unnamed-chunk-10](./analysis_files/figure-html/unnamed-chunk-10.png) 
+![plot of chunk unnamed-chunk-11](./analysis_files/figure-html/unnamed-chunk-11.png) 
 
 ```r
 cor(poszscore, zscore)
@@ -147,7 +159,7 @@ plot(neg[,1], negzscore, pch = 19, col = 'red')
 points(pos[,1], zscore, pch = 19, col = 'purple')
 ```
 
-![plot of chunk unnamed-chunk-11](./analysis_files/figure-html/unnamed-chunk-11.png) 
+![plot of chunk unnamed-chunk-12](./analysis_files/figure-html/unnamed-chunk-12.png) 
 
 ```r
 cor(poszscore, zscore)
@@ -156,4 +168,5 @@ cor(poszscore, zscore)
 ```
 ## [1] 0.7628
 ```
+
 
