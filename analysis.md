@@ -67,5 +67,61 @@ abline(poslm$coefficients[1],poslm$coefficients[2], col = 'red', lty = 2, lwd = 
 ![plot of chunk unnamed-chunk-6](./analysis_files/figure-html/unnamed-chunk-6.png) 
 
 
+## 相关性检验
+### 读入词频矩阵
 
+```r
+posdf <- read.csv("posdf.csv", stringsAsFactors = F, header = T)
+negdf <- read.csv("negdf.csv", stringsAsFactors = F, header = T)
+```
+
+### 计算相关性
+
+```r
+poscor <- rep(0,ncol(posdf)-1)
+negcor <- rep(0,ncol(negdf)-1)
+for (i in 2:ncol(posdf)){
+  poscor[i-1] = cor(freqpos, posdf[,i]/total[,3])
+}
+for (i in 2:ncol(negdf)){
+  negcor[i-1] = cor(freqneg, negdf[,i]/total[,3])
+}
+```
+
+### 找出最能代表正面情感走势和负面情感走势的词语
+
+```r
+top10poscorscore <- sort(poscor, T)[1:10]
+top10posterm <- rep("",10)
+for (i in 1:10){
+  top10posterm[i] = names(posdf)[which(poscor == top10poscorscore[i])+1]
+}
+top10posterm
+```
+
+```
+##  [1] "向"   "要"   "过"   "快"   "集中" "好"   "给"   "尽"   "肯定" "接受"
+```
+
+```r
+top10negcorscore <- sort(negcor, T)[1:10]
+top10negterm <- rep("",10)
+for (i in 1:10){
+  top10negterm[i] = names(negdf)[which(negcor == top10negcorscore[i])+1]
+}
+top10negterm
+```
+
+```
+##  [1] "说"       "给"       "沉重"     "不顾"     "惊慌"     "向"      
+##  [7] "教训"     "担心"     "摇摆"     "怒不可遏"
+```
+
+
+```r
+plot(pos[,1], freqpos, pch = 19, col = 'red')
+points(pos[,1], 23*posdf[,419]/total[,3], pch = 19, col = 'green')
+```
+
+![plot of chunk unnamed-chunk-10](./analysis_files/figure-html/unnamed-chunk-10.png) 
 
