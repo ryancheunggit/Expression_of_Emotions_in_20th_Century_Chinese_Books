@@ -25,14 +25,14 @@ df <- df/total[,3]
 ## Clustering
 
 ### Hierarchical Clusting
-```{r}
+```{r HIC}
 distance = dist(df, method = "euclidean")
 clusterIntensity = hclust(distance, method="ward.D")
 plot(clusterIntensity)
 ```
 
 ### Select 2 Cluster in HC
-```{r}
+```{r HIC2}
 plot(clusterIntensity)
 rect.hclust(clusterIntensity, k = 2, border = "red")
 YearCluster = cutree(clusterIntensity, k = 2)
@@ -40,7 +40,7 @@ YearCluster
 ```
 
 ### Select 5 Cluster in HC
-```{r}
+```{r HIC5}
 plot(clusterIntensity)
 rect.hclust(clusterIntensity, k = 5, border = "red")
 YearCluster = cutree(clusterIntensity, k = 5)
@@ -48,7 +48,7 @@ YearCluster
 ```
 
 ### Plot the clusters
-```{r}
+```{r Cluster}
 library(ggplot2)
 Clusters <- as.data.frame(cbind(row.names(total), YearCluster))
 names(Clusters) <- c('Year','Cluster')

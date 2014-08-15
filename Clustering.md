@@ -36,7 +36,7 @@ clusterIntensity = hclust(distance, method = "ward.D")
 plot(clusterIntensity)
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk HIC](figure/HIC.png) 
 
 
 ### Select 2 Cluster in HC
@@ -46,7 +46,7 @@ plot(clusterIntensity)
 rect.hclust(clusterIntensity, k = 2, border = "red")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk HIC2](figure/HIC2.png) 
 
 ```r
 YearCluster = cutree(clusterIntensity, k = 2)
@@ -78,7 +78,7 @@ plot(clusterIntensity)
 rect.hclust(clusterIntensity, k = 5, border = "red")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot of chunk HIC5](figure/HIC5.png) 
 
 ```r
 YearCluster = cutree(clusterIntensity, k = 5)
@@ -120,7 +120,7 @@ Clusters$Cluster <- as.factor(Clusters$Cluster)
 ggplot(Clusters, aes(x = Year, y = Cluster, color = Cluster, size = 3)) + geom_point()
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
+![plot of chunk Cluster](figure/Cluster.png) 
 
 
 ### Write the Clusters to File

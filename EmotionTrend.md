@@ -58,7 +58,7 @@ ggplot(df, aes(x = Year, y = sentzscore)) + stat_smooth(method = "lm", formula =
     x = "Year", y = "Emotion(Zscore)")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk Emotion](figure/Emotion.png) 
 
 
 
@@ -71,7 +71,7 @@ ggplot(df, aes(x = Year, y = poszscore)) + stat_smooth(method = "lm", formula = 
     x = "Year", y = "Positive Emotion(Zscore)")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk Pos](figure/Pos.png) 
 
 
 负面情感词各年频次：
@@ -83,7 +83,7 @@ ggplot(df, aes(x = Year, y = negzscore)) + stat_smooth(method = "lm", formula = 
     x = "Year", y = "Negitive Emotion(Zscore)")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot of chunk Neg](figure/Neg.png) 
 
 
 三者放在一张图上：
@@ -100,7 +100,7 @@ points(pos[, 1], freqpos, col = "red", pch = 19)
 abline(poslm$coefficients[1], poslm$coefficients[2], col = "red", lty = 2, lwd = 2)
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
+![plot of chunk All](figure/All.png) 
 
 
 ## 相关性检验
@@ -167,7 +167,7 @@ plot(pos[, 1], poszscore, pch = 19, col = "red")
 points(pos[, 1], zscore, pch = 19, col = "green")
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
+![plot of chunk hao](figure/hao.png) 
 
 ```r
 cor(poszscore, zscore)
@@ -186,7 +186,7 @@ plot(neg[, 1], negzscore, pch = 19, col = "red")
 points(pos[, 1], zscore, pch = 19, col = "purple")
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
+![plot of chunk chengzhong](figure/chengzhong.png) 
 
 ```r
 cor(poszscore, zscore)

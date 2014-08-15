@@ -37,24 +37,24 @@ names(df)[8] <- 'Cluster'
 ### 绘制图
 
 情绪差值的标准值图：
-```{r}
+```{r Emotion}
 library(ggplot2)
 ggplot(df, aes(x = Year, y = sentzscore))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
 ```
 
 
 正面情感词各年频次：
-```{r}
+```{r Pos}
 ggplot(df, aes(x = Year, y = poszscore))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
 ```
 
 负面情感词各年频次：
-```{r}
+```{r Neg}
 ggplot(df, aes(x = Year, y = negzscore))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
 ```
 
 三者放在一张图上：
-```{r}
+```{r All}
 plot( 1900:2000, seq(-0.008,0.012,0.02/100), type = "n", xlab = "year", ylab = "sentiment") 
 points(pos[,1], sent, col = 'black', pch = 19)
 abline(sentlm$coefficients[1],sentlm$coefficients[2], col = 'black', lty = 2, lwd = 2)
@@ -102,7 +102,7 @@ for (i in 1:10){
 top10negterm
 ```
 
-```{r}
+```{r hao}
 freq <- posdf$好/total[,3]
 zscore <- (freq-mean(freq))/sd(freq)
 plot(pos[,1], poszscore, pch = 19, col = 'red')
@@ -110,7 +110,7 @@ points(pos[,1], zscore, pch = 19, col = 'green')
 cor(poszscore, zscore)
 ```
 
-```{r}
+```{r chengzhong}
 freq <- negdf$沉重/total[,3]
 zscore <- (freq-mean(freq))/sd(freq)
 plot(neg[,1], negzscore, pch = 19, col = 'red')
