@@ -13,6 +13,7 @@ output:
 neg <- read.table("negsentiment.txt", header = T)
 pos <- read.table("possentiment.txt", header = T)
 total <- read.table("summaryout.txt", header = T)
+clusters <- read.csv("Clusters.csv", header = T)
 ```
 
 
@@ -22,63 +23,67 @@ total <- read.table("summaryout.txt", header = T)
 
 ```r
 freqneg <- neg[, 2]/total[, 3]
-freqpos <- pos[, 2]/total[, 3]
-sent <- freqpos - freqneg
-poslm <- lm(freqpos ~ pos[, 1])
+negzscore <- (freqneg - mean(freqneg))/sd(freqneg)
 neglm <- lm(-freqneg ~ neg[, 1])
 neglmp <- lm(freqneg ~ neg[, 1])
-sentlm <- lm(sent ~ pos[, 1])
-negzscore <- (freqneg - mean(freqneg))/sd(freqneg)
+freqpos <- pos[, 2]/total[, 3]
+poslm <- lm(freqpos ~ pos[, 1])
 poszscore <- (freqpos - mean(freqpos))/sd(freqpos)
+sent <- freqpos - freqneg
+sentlm <- lm(sent ~ pos[, 1])
+sentzscore <- (sent - mean(sent))/sd(sent)
+df <- as.data.frame(cbind(pos[, 1], freqneg, negzscore, freqpos, poszscore, 
+    sent, sentzscore, clusters[, 2]))
+names(df)[1] <- "Year"
+names(df)[8] <- "Cluster"
 ```
+
 
 ### 绘制图
 
 情绪差值的标准值图：
 
 ```r
-sentz <- (sent - mean(sent))/sd(sent)
-plot(pos[, 1], sentz, pch = 19, col = "black", xlab = "year", ylab = "postive - negative")
-sentzlm <- lm(sentz ~ pos[, 1])
-abline(sentzlm$coefficients[1], sentzlm$coefficients[2], col = "black", lty = 2, 
-    lwd = 2)
+library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.1.1
+```
+
+```r
+ggplot(df, aes(x = Year, y = sentzscore)) + stat_smooth(method = "lm", formula = y ~ 
+    x, size = 1, color = "black", alpha = 0.1) + geom_point(aes(color = factor(Cluster), 
+    size = 5)) + labs(title = "Expression of Emotion in 20 Century Chinese Books", 
+    x = "Year", y = "Emotion(Zscore)")
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
 
 
-负面情感词各年频次：
+正面情感词各年频次：
 
 ```r
-
-plot(neg[, 1], freqneg, pch = 19, col = "blue")
-abline(neglmp$coefficients[1], neglmp$coefficients[2], col = "blue", lty = 2, 
-    lwd = 2)
+ggplot(df, aes(x = Year, y = poszscore)) + stat_smooth(method = "lm", formula = y ~ 
+    x, size = 1, color = "black", alpha = 0.1) + geom_point(aes(color = factor(Cluster), 
+    size = 5)) + labs(title = "Positive Emotion in 20 Century Chinese Books", 
+    x = "Year", y = "Positive Emotion(Zscore)")
 ```
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 
-正面情感词各年频次：
+负面情感词各年频次：
 
 ```r
-plot(pos[, 1], freqpos, pch = 19, col = "red")
-abline(poslm$coefficients[1], poslm$coefficients[2], col = "red", lty = 2, lwd = 2)
+ggplot(df, aes(x = Year, y = negzscore)) + stat_smooth(method = "lm", formula = y ~ 
+    x, size = 1, color = "black", alpha = 0.1) + geom_point(aes(color = factor(Cluster), 
+    size = 5)) + labs(title = "Negitive Emotion in 20 Century Chinese Books", 
+    x = "Year", y = "Negitive Emotion(Zscore)")
 ```
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
-
-
-情感值（正面情感各年频次-负面情感各年频次）随年份的变化：
-
-```r
-plot(pos[, 1], sent, pch = 19, col = "black")
-abline(sentlm$coefficients[1], sentlm$coefficients[2], col = "black", lty = 2, 
-    lwd = 2)
-```
-
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
 
 
 三者放在一张图上：
@@ -95,8 +100,7 @@ points(pos[, 1], freqpos, col = "red", pch = 19)
 abline(poslm$coefficients[1], poslm$coefficients[2], col = "red", lty = 2, lwd = 2)
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
-
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
 
 
 ## 相关性检验
@@ -163,7 +167,7 @@ plot(pos[, 1], poszscore, pch = 19, col = "red")
 points(pos[, 1], zscore, pch = 19, col = "green")
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
 
 ```r
 cor(poszscore, zscore)
@@ -182,7 +186,7 @@ plot(neg[, 1], negzscore, pch = 19, col = "red")
 points(pos[, 1], zscore, pch = 19, col = "purple")
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
 
 ```r
 cor(poszscore, zscore)
@@ -192,5 +196,11 @@ cor(poszscore, zscore)
 ## [1] 0.7628
 ```
 
+
+### Write out sentiment data
+
+```r
+write.csv(df, "sentiment.csv")
+```
 
 
