@@ -47,12 +47,12 @@ write.csv(df, "FreqMatrix.csv")
 
 library(rpart)
 library(rpart.plot)
-modelrpart <- rpart(Cluster~.,method = "class", data = df)
+modelrpart <- rpart(Cluster~.,method = "class", data = df[,2:1288])
 
 
 # Prediction
 
-predrpart <- predict(modelrpart, newdata = df[,1:1286], type = "class")
+predrpart <- predict(modelrpart, newdata = df[,2:1287], type = "class")
 
 
 #  Confusion Matrix
@@ -69,3 +69,35 @@ print(modelrpart)
 
 prp(modelrpart)
 
+# lasso model
+library(glmnet)
+
+alpha=1.0  # lasso
+
+x <- df[,2:1287]
+y <- df[,1288]
+
+# training
+f=glmnet(x=as.matrix(x), y=as.matrix(y), alpha=alpha, family="multinomial")
+
+# print summary
+summary(f)
+
+# plot
+plot(f)
+plot(f, xvar="dev") 
+
+# 10 fold cross validation training
+cv = cv.glmnet(x=as.matrix(x), y=as.matrix(y), alpha=alpha, family="multinomial")
+
+# see number of feature(word)used for each lambda
+cv$nzero
+plot(cv)
+
+coefmin <- coef(f, cv$lambda.min)
+coefmin[1]
+coefmin[2]
+coefmin[3]
+coefmin[4]
+coefmin[5]
+coef1se <- coef(f, cv$lambda.1se)
