@@ -85,6 +85,10 @@ generate_data_frame.R
 生成csv文件：posdf.csv, negdf.csv     
 
 ## 9 R中绘图、分析
-analysis.Rmd
-
+### 9.1 聚类分析      
+Clustering.Rmd      
+### 9.2 总体情感走势    
+EmotionTrend.Rmd       
+### 9.3 分类树模型
+Classification.R     
 
