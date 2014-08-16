@@ -1,0 +1,7 @@
+use ngram
+
+select year, max(volume_count)
+from cn1gram
+where year >= 1900 and year <= 2000
+group by year
+order by year;
