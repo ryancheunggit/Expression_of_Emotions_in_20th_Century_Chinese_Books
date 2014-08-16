@@ -1,0 +1,43 @@
+---
+title: "Expression of Emotions in 20th Century Chinese Books"
+author: "Ryan Cheung"
+date: "Thursday, August 16, 2014"
+output:
+  html_document:
+    keep_md: yes
+---
+
+
+## Load in data ¶ÁÈëÊı¾İ
+```{r}
+df <- read.csv("FreqMatrix.csv")
+```
+
+
+## Decision Tree Model
+### Training 
+```{r}
+library(rpart)
+library(rpart.plot)
+modelrpart <- rpart(Cluster~.,method = "class", data = df)
+```
+
+### Prediction
+```{r}
+predrpart <- predict(modelrpart, newdata = df[,1:1286], type = "class")
+```
+
+### Confusion Matrix
+```{r}
+table(predict = predrpart, truth = df$Cluster)
+```
+
+### Model Detail
+```{r}
+print(modelrpart)
+```
+
+### Plot the Model
+```{r TreeModel}
+prp(modelrpart)
+```
