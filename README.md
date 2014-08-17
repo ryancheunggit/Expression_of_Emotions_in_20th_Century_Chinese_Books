@@ -26,3 +26,8 @@
 
 分析图的生成过程详情见 log.md .
 
+![copyright](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+Expression of Emotions in 20th Century Chinese Books 由 Ryan Cheung 创作，采用 知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议进行许可。     
+基于https://github.com/ryancheunggit/Expression_of_Emotions_in_20th_Century_Chinese_Books/上的作品创作。
+本许可协议授权之外的使用权限可以从 ryanzjlib@gmail.com 处获得。
