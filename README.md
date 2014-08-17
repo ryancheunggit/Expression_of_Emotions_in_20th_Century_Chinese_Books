@@ -17,11 +17,11 @@
 4：1966-1977 文革期间   
 5：1978-2000 改革开放以来   
 
-![分类树模型](./figure/TreeModel.png)
+![分类树模型](./figure/TreeModel.png)              
 用分类树模型根据词频矩阵预测其所属聚集，发现只需要5个词即可知道年份,5个词为：    
 好、惊讶、关注、愿意、爱护    
 
-![Lasso模型](./figure/CVLasso.png)
+![Lasso模型](./figure/CVLasso.png)                 
 训练Lasso模型的也表示，5个词作Feature就足够好了。    
 
 分析图的生成过程详情见 log.md .
