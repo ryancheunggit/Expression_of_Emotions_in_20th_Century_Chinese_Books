@@ -31,14 +31,6 @@ clusterIntensity = hclust(distance, method="ward.D")
 plot(clusterIntensity)
 ```
 
-### Select 2 Cluster in HC
-```{r HIC2}
-plot(clusterIntensity)
-rect.hclust(clusterIntensity, k = 2, border = "red")
-YearCluster = cutree(clusterIntensity, k = 2)
-YearCluster
-```
-
 ### Select 5 Cluster in HC
 ```{r HIC5}
 plot(clusterIntensity)
