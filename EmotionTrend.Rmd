@@ -19,17 +19,26 @@ clusters <- read.csv("Clusters.csv", header = T)
 ### 以总1gram频次正则化
 
 ```{r}
+# freqneg are the frequencies of a postive mood word
 freqneg <- neg[,2]/total[,3]
-negzscore <- (freqneg - mean(freqneg))/sd(freqneg)
-neglm <- lm(-freqneg~neg[,1])
-neglmp <- lm(freqneg~neg[,1])
+# MNEG are the negative mood scores for each year
+MNEG <- 1/702*freqneg
+# MZNEG are the standardized negative mood scores for each year
+MZNEG <- (MNEG - mean(MNEG))/sd(MNEG)
+
+# freqpos are the frequencies of a postive mood word
 freqpos <- pos[,2]/total[,3]
-poslm <- lm(freqpos~pos[,1])
-poszscore <- (freqpos - mean(freqpos))/sd(freqpos)
+# MPOS are the positive mood scores for each year
+MPOS <- 1/595*freqpos
+# MZPOS are the standardized positive mood scores for each year
+MZPOS <- (MPOS - mean(MPOS))/sd(MPOS)
+
+# sent are the difference in mood scores
 sent <- freqpos - freqneg
-sentlm <- lm(sent~pos[,1])
-sentzscore <- (sent - mean(sent))/sd(sent)
-df <- as.data.frame(cbind(pos[,1],freqneg,negzscore,freqpos,poszscore,sent,sentzscore, clusters[,2]))
+# MZ are the standardized difference in mood scores
+MZ <- MZPOS -MZNEG
+
+df <- as.data.frame(cbind(pos[,1],freqneg,MZNEG,freqpos,MZPOS,sent,MZ, clusters[,2]))
 names(df)[1] <- 'Year'
 names(df)[8] <- 'Cluster'
 ```
@@ -39,83 +48,18 @@ names(df)[8] <- 'Cluster'
 情绪差值的标准值图：
 ```{r Emotion}
 library(ggplot2)
-ggplot(df, aes(x = Year, y = sentzscore))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZ))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
 ```
 
 
 正面情感词各年频次：
 ```{r Pos}
-ggplot(df, aes(x = Year, y = poszscore))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZPOS))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
 ```
 
 负面情感词各年频次：
 ```{r Neg}
-ggplot(df, aes(x = Year, y = negzscore))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
-```
-
-三者放在一张图上：
-```{r All}
-plot( 1900:2000, seq(-0.008,0.012,0.02/100), type = "n", xlab = "year", ylab = "sentiment") 
-points(pos[,1], sent, col = 'black', pch = 19)
-abline(sentlm$coefficients[1],sentlm$coefficients[2], col = 'black', lty = 2, lwd = 2)
-points(neg[,1], -freqneg, col = 'blue', pch = 19)
-abline(neglm$coefficients[1],neglm$coefficients[2], col = 'blue', lty = 2, lwd = 2)
-points(pos[,1], freqpos, col = 'red', pch = 19)
-abline(poslm$coefficients[1],poslm$coefficients[2], col = 'red', lty = 2, lwd = 2)
-```
-
-## 相关性检验
-### 读入词频矩阵
-```{r}
-posdf <- read.csv("posdf.csv", stringsAsFactors = F, header = T)
-negdf <- read.csv("negdf.csv", stringsAsFactors = F, header = T)
-```
-
-### 计算相关性
-```{r}
-poscor <- rep(0,ncol(posdf)-1)
-negcor <- rep(0,ncol(negdf)-1)
-for (i in 2:ncol(posdf)){
-  freq <- posdf[,i]/total[,3]
-  poscor[i-1] = cor(poszscore, (freq-mean(freq))/sd(freq))
-}
-for (i in 2:ncol(negdf)){
-  freq <- negdf[,i]/total[,3]
-  negcor[i-1] = cor(negzscore, (freq-mean(freq))/sd(freq))
-}
-```
-
-### 找出最能代表正面情感走势和负面情感走势的词语
-```{r}
-top10poscorscore <- sort(poscor, T)[1:10]
-top10posterm <- rep("",10)
-for (i in 1:10){
-  top10posterm[i] <- names(posdf)[which(poscor == top10poscorscore[i])+1]
-}
-top10posterm
-
-top10negcorscore <- sort(negcor, T)[1:10]
-top10negterm <- rep("",10)
-for (i in 1:10){
-  top10negterm[i] <- names(negdf)[which(negcor == top10negcorscore[i])+1]
-}
-top10negterm
-```
-
-```{r hao}
-freq <- posdf$好/total[,3]
-zscore <- (freq-mean(freq))/sd(freq)
-plot(pos[,1], poszscore, pch = 19, col = 'red')
-points(pos[,1], zscore, pch = 19, col = 'green')
-cor(poszscore, zscore)
-```
-
-```{r chengzhong}
-freq <- negdf$沉重/total[,3]
-zscore <- (freq-mean(freq))/sd(freq)
-plot(neg[,1], negzscore, pch = 19, col = 'red')
-points(pos[,1], zscore, pch = 19, col = 'purple')
-cor(poszscore, zscore)
+ggplot(df, aes(x = Year, y = MZNEG))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
 ```
 
 ### Write out sentiment data

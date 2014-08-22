@@ -1,13 +1,8 @@
----
-title: "Expression of Emotions in 20th Century Chinese Books"
-author: "Ryan Cheung"
-date: "Thursday, August 07, 2014"
-output:
-  html_document:
-    keep_md: yes
----
+# Expression of Emotions in 20th Century Chinese Books
+Ryan Cheung  
+Thursday, August 07, 2014  
 
-## Load in data ¶ÁÈëÊı¾İ
+## Load in data è¯»å…¥æ•°æ®
 
 ```r
 neg <- read.table("negsentiment.txt", header = T)
@@ -16,191 +11,66 @@ total <- read.table("summaryout.txt", header = T)
 clusters <- read.csv("Clusters.csv", header = T)
 ```
 
-
-## ¼ÆËã¸÷ÄêµÄÇé¸ĞÖµ Calculate mood scores
-### ÒÔ×Ü1gramÆµ´ÎÕıÔò»¯
+## è®¡ç®—å„å¹´çš„æƒ…æ„Ÿå€¼ Calculate mood scores
+### ä»¥æ€»1gramé¢‘æ¬¡æ­£åˆ™åŒ–
 
 
 ```r
-freqneg <- neg[, 2]/total[, 3]
-negzscore <- (freqneg - mean(freqneg))/sd(freqneg)
-neglm <- lm(-freqneg ~ neg[, 1])
-neglmp <- lm(freqneg ~ neg[, 1])
-freqpos <- pos[, 2]/total[, 3]
-poslm <- lm(freqpos ~ pos[, 1])
-poszscore <- (freqpos - mean(freqpos))/sd(freqpos)
+# freqneg are the frequencies of a postive mood word
+freqneg <- neg[,2]/total[,3]
+# MNEG are the negative mood scores for each year
+MNEG <- 1/702*freqneg
+# MZNEG are the standardized negative mood scores for each year
+MZNEG <- (MNEG - mean(MNEG))/sd(MNEG)
+
+# freqpos are the frequencies of a postive mood word
+freqpos <- pos[,2]/total[,3]
+# MPOS are the positive mood scores for each year
+MPOS <- 1/595*freqpos
+# MZPOS are the standardized positive mood scores for each year
+MZPOS <- (MPOS - mean(MPOS))/sd(MPOS)
+
+# sent are the difference in mood scores
 sent <- freqpos - freqneg
-sentlm <- lm(sent ~ pos[, 1])
-sentzscore <- (sent - mean(sent))/sd(sent)
-df <- as.data.frame(cbind(pos[, 1], freqneg, negzscore, freqpos, poszscore, 
-    sent, sentzscore, clusters[, 2]))
-names(df)[1] <- "Year"
-names(df)[8] <- "Cluster"
+# MZ are the standardized difference in mood scores
+MZ <- MZPOS -MZNEG
+
+df <- as.data.frame(cbind(pos[,1],freqneg,MZNEG,freqpos,MZPOS,sent,MZ, clusters[,2]))
+names(df)[1] <- 'Year'
+names(df)[8] <- 'Cluster'
 ```
 
+### ç»˜åˆ¶å›¾
 
-### »æÖÆÍ¼
-
-ÇéĞ÷²îÖµµÄ±ê×¼ÖµÍ¼£º
+æƒ…ç»ªå·®å€¼çš„æ ‡å‡†å€¼å›¾ï¼š
 
 ```r
 library(ggplot2)
+ggplot(df, aes(x = Year, y = MZ))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
 ```
 
-```
-## Warning: package 'ggplot2' was built under R version 3.1.1
-```
+![plot of chunk Emotion](./EmotionTrend_files/figure-html/Emotion.png) 
+
+
+æ­£é¢æƒ…æ„Ÿè¯å„å¹´é¢‘æ¬¡ï¼š
 
 ```r
-ggplot(df, aes(x = Year, y = sentzscore)) + stat_smooth(method = "lm", formula = y ~ 
-    x, size = 1, color = "black", alpha = 0.1) + geom_point(aes(color = factor(Cluster), 
-    size = 5)) + labs(title = "Expression of Emotion in 20 Century Chinese Books", 
-    x = "Year", y = "Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZPOS))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
 ```
 
-![plot of chunk Emotion](figure/Emotion.png) 
+![plot of chunk Pos](./EmotionTrend_files/figure-html/Pos.png) 
 
-
-
-ÕıÃæÇé¸Ğ´Ê¸÷ÄêÆµ´Î£º
+è´Ÿé¢æƒ…æ„Ÿè¯å„å¹´é¢‘æ¬¡ï¼š
 
 ```r
-ggplot(df, aes(x = Year, y = poszscore)) + stat_smooth(method = "lm", formula = y ~ 
-    x, size = 1, color = "black", alpha = 0.1) + geom_point(aes(color = factor(Cluster), 
-    size = 5)) + labs(title = "Positive Emotion in 20 Century Chinese Books", 
-    x = "Year", y = "Positive Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZNEG))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
 ```
 
-![plot of chunk Pos](figure/Pos.png) 
-
-
-¸ºÃæÇé¸Ğ´Ê¸÷ÄêÆµ´Î£º
-
-```r
-ggplot(df, aes(x = Year, y = negzscore)) + stat_smooth(method = "lm", formula = y ~ 
-    x, size = 1, color = "black", alpha = 0.1) + geom_point(aes(color = factor(Cluster), 
-    size = 5)) + labs(title = "Negitive Emotion in 20 Century Chinese Books", 
-    x = "Year", y = "Negitive Emotion(Zscore)")
-```
-
-![plot of chunk Neg](figure/Neg.png) 
-
-
-ÈıÕß·ÅÔÚÒ»ÕÅÍ¼ÉÏ£º
-
-```r
-plot(1900:2000, seq(-0.008, 0.012, 0.02/100), type = "n", xlab = "year", ylab = "sentiment")
-points(pos[, 1], sent, col = "black", pch = 19)
-abline(sentlm$coefficients[1], sentlm$coefficients[2], col = "black", lty = 2, 
-    lwd = 2)
-points(neg[, 1], -freqneg, col = "blue", pch = 19)
-abline(neglm$coefficients[1], neglm$coefficients[2], col = "blue", lty = 2, 
-    lwd = 2)
-points(pos[, 1], freqpos, col = "red", pch = 19)
-abline(poslm$coefficients[1], poslm$coefficients[2], col = "red", lty = 2, lwd = 2)
-```
-
-![plot of chunk All](figure/All.png) 
-
-
-## Ïà¹ØĞÔ¼ìÑé
-### ¶ÁÈë´ÊÆµ¾ØÕó
-
-```r
-posdf <- read.csv("posdf.csv", stringsAsFactors = F, header = T)
-negdf <- read.csv("negdf.csv", stringsAsFactors = F, header = T)
-```
-
-
-### ¼ÆËãÏà¹ØĞÔ
-
-```r
-poscor <- rep(0, ncol(posdf) - 1)
-negcor <- rep(0, ncol(negdf) - 1)
-for (i in 2:ncol(posdf)) {
-    freq <- posdf[, i]/total[, 3]
-    poscor[i - 1] = cor(poszscore, (freq - mean(freq))/sd(freq))
-}
-for (i in 2:ncol(negdf)) {
-    freq <- negdf[, i]/total[, 3]
-    negcor[i - 1] = cor(negzscore, (freq - mean(freq))/sd(freq))
-}
-```
-
-
-### ÕÒ³ö×îÄÜ´ú±íÕıÃæÇé¸Ğ×ßÊÆºÍ¸ºÃæÇé¸Ğ×ßÊÆµÄ´ÊÓï
-
-```r
-top10poscorscore <- sort(poscor, T)[1:10]
-top10posterm <- rep("", 10)
-for (i in 1:10) {
-    top10posterm[i] <- names(posdf)[which(poscor == top10poscorscore[i]) + 1]
-}
-top10posterm
-```
-
-```
-##  [1] "Ïò"   "Òª"   "¹ı"   "¿ì"   "ºÃ"   "¼¯ÖĞ" "¾¡"   "¿Ï¶¨" "½ÓÊÜ" "¹ØĞÄ"
-```
-
-```r
-
-top10negcorscore <- sort(negcor, T)[1:10]
-top10negterm <- rep("", 10)
-for (i in 1:10) {
-    top10negterm[i] <- names(negdf)[which(negcor == top10negcorscore[i]) + 1]
-}
-top10negterm
-```
-
-```
-##  [1] "Ëµ"       "³ÁÖØ"     "²»¹Ë"     "¾ª»Å"     "ÉúÆø"     "Å­²»¿É¶ô"
-##  [7] "½ÌÑµ"     "Ò¡°Ú"     "ÉË"       "µ£ĞÄ"
-```
-
-
-
-```r
-freq <- posdf$ºÃ/total[, 3]
-zscore <- (freq - mean(freq))/sd(freq)
-plot(pos[, 1], poszscore, pch = 19, col = "red")
-points(pos[, 1], zscore, pch = 19, col = "green")
-```
-
-![plot of chunk hao](figure/hao.png) 
-
-```r
-cor(poszscore, zscore)
-```
-
-```
-## [1] 0.8661
-```
-
-
-
-```r
-freq <- negdf$³ÁÖØ/total[, 3]
-zscore <- (freq - mean(freq))/sd(freq)
-plot(neg[, 1], negzscore, pch = 19, col = "red")
-points(pos[, 1], zscore, pch = 19, col = "purple")
-```
-
-![plot of chunk chengzhong](figure/chengzhong.png) 
-
-```r
-cor(poszscore, zscore)
-```
-
-```
-## [1] 0.7628
-```
-
+![plot of chunk Neg](./EmotionTrend_files/figure-html/Neg.png) 
 
 ### Write out sentiment data
 
 ```r
-write.csv(df, "sentiment.csv")
+write.csv(df, 'sentiment.csv')
 ```
-
 
