@@ -1,5 +1,8 @@
 ﻿二十世纪中文图书中的情感变化
 ====================================================
+to do:       
+residual plot of negative and positive scores
+   
 
 ![情感变化图](./EmotionTrend_files/figure-html/Emotion.png) 
 
