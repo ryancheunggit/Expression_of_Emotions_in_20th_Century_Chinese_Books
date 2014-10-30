@@ -1,0 +1,2 @@
+use ngram
+select year, count(*), sum(match_count), sum(volume_count) from cn1gram where year >= 2001 and year <= 2008 group by year order by year;

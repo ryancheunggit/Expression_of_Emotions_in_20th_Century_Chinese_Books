@@ -21,6 +21,8 @@
 “向 ... 问罪”改为“问罪”             
 
 ## 3 将1gram数据导入数据库:    
+控制面板->管理工具->服务->启用MYSQL服务
+
 
 ### 3.1 新建并进入ngram数据库    
 cmd> mysql -u root -p    
@@ -93,3 +95,7 @@ EmotionTrend.Rmd
 Classification.R     
 
 ### 10 撰写报告
+
+### 11 10/29/2014
+mysql -u root -p < "path/2001-2009summary.txt" > "path/2001-2009summaryout.txt"   
+

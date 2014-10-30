@@ -10,6 +10,15 @@ posdf <- read.csv("posdf.csv", stringsAsFactors = F, header = T)
 negdf <- read.csv("negdf.csv", stringsAsFactors = F, header = T)
 ```
 
+## General Usage of Emotion Words
+
+```r
+plot((rowSums(negdf[,2:101]) + rowSums(posdf[,2:101]))/total[,3], pch = 19,type = 'p')
+```
+
+![plot of chunk GTrend](./Clustering_files/figure-html/GTrend.png) 
+
+
 ## Creating DataFrame
 
 
