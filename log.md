@@ -68,10 +68,10 @@ Python代码：process.py
 ### 6.1 创建表sentiment_neg和sentiment_pos
 cmd> mysql -u root -p ngram                       
 sql shell> create table sentiment_neg                    
-        -> ( ngram text default = null,                   
-	->   year int(11) default = null,                   
-	->   match_count int(20) default = null,                   
-	->   volume_count int(20) default = null)                  
+        -> ( ngram text default null,                   
+	->   year int(11) default null,                   
+	->   match_count int(20) default null,                   
+	->   volume_count int(20) default null)                  
 	-> engine = innodb;                  
 sql shell> \q                     
 
@@ -97,5 +97,21 @@ Classification.R
 ### 10 撰写报告
 
 ### 11 10/29/2014
-mysql -u root -p < "path/2001-2009summary.txt" > "path/2001-2009summaryout.txt"   
-
+mysql -u root -p < "path/2001-2008summary.txt" > "path/2001-2008summaryout.txt"   
+Python代码：querygen2001-2008.py            
+生成的SQL批处理文件：querypos2001-2008.txt和queryneg2001-2008.txt
+cmd> mysql -u root -p < "path/querypos2001-2008.txt" > "path/pos2001-2008.txt"   
+cmd> mysql -u root -p < "path/queryneg2001-2008.txt" > "path/neg2001-2008.txt"   
+Python代码：process2001-2008       .py                  
+处理后文件：posclean.txt和negclean.txt
+cmd> mysql -u root -p ngram                       
+sql shell> create table sentiment_neg                    
+        -> ( ngram text default null,                   
+        ->   year int(11) default null,                   
+        ->   match_count int(20) default null,                   
+        ->   volume_count int(20) default null)                  
+        -> engine = innodb;                  
+sql shell> \q   
+cmd> mysql -u root -p < "path/loadsentiment2001-2008.txt"
+cmd> mysql -u root -p < "path/negsum2001-2008.txt" > "path/negsentiment2001-2008.txt"                   
+cmd> mysql -u root -p < "path/possum2001-2008.txt" > "path/possentiment2001-2008.txt"

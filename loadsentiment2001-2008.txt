@@ -1,0 +1,3 @@
+use ngram;
+load data local infile 'e:/articles/negclean2001-2008.txt' into table sentiment_neg2001_2008;
+load data local infile 'e:/articles/posclean2001-2008.txt' into table sentiment_pos2001_2008;
