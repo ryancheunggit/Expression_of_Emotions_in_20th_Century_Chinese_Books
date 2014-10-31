@@ -58,3 +58,8 @@ ggplot(Clusters, aes(x = Year, y = Cluster, color = Cluster, size = 3)) + geom_p
 ```{r}
 write.csv(Clusters, file = "Clusters.csv", row.names = F)
 ```
+
+
+
+
+
