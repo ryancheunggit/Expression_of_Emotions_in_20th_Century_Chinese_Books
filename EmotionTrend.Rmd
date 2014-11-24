@@ -6,6 +6,12 @@ output:
   html_document:
     keep_md: yes
 ---
+```{r}
+library(ggplot2)
+library(ggthemes)
+theme_set(theme_minimal(12))
+library(RColorBrewer)
+```
 
 ## Load in data 读入数据
 ```{r}
@@ -46,24 +52,100 @@ names(df)[8] <- 'Cluster'
 ### 绘制图
 
 情绪差值的标准值图：
-```{r Emotion}
-library(ggplot2)
-ggplot(df, aes(x = Year, y = MZ))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
+```{r Emotion, warning = F}
+ggplot(df, aes(x = Year, y = MZ))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size = 1,
+              color = 'black',
+              alpha = 0.3)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_line(aes(alpha = 0.3))+
+  labs(title = "二十世纪中文图书中总体情感值走势", x= "年份", y = "情感值")
+```
+
+```{r}
+ggplot(df, aes(x = Year, y = MZ))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size = 1,
+              color = 'black',
+              alpha = 0.3)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = 'Cluster', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_line(aes(alpha = 0.3))+
+  labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
 ```
 
 
 正面情感词各年频次：
-```{r Pos}
-ggplot(df, aes(x = Year, y = MZPOS))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
+```{r Pos, warning=F}
+ggplot(df, aes(x = Year, y = MZPOS))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size =1,
+              color = 'black',
+              alpha = 0.1)+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  labs(title = "二十世纪中文图书中积极情感值走势", x= "年份", y = "积极情感值（标准值）")
 ```
 
+```{r}
+ggplot(df, aes(x = Year, y = MZPOS))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size =1,
+              color = 'black',
+              alpha = 0.1)+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = 'Cluster', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
+```
+
+
 负面情感词各年频次：
-```{r Neg}
-ggplot(df, aes(x = Year, y = MZNEG))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
+```{r Neg, warning=F}
+ggplot(df, aes(x = Year, y = MZNEG))+ 
+  stat_smooth(method = "loess", 
+              formula = y~x, 
+              size =1, 
+              color = 'black', 
+              alpha = 0.1)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  labs(title = "二十世纪中文图书中消极情感值走势", x= "年份", y = "消极情感值（标准值）")
+```
+
+
+```{r}
+ggplot(df, aes(x = Year, y = MZNEG))+ 
+  stat_smooth(method = "loess", 
+              formula = y~x, 
+              size =1, 
+              color = 'black', 
+              alpha = 0.1)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = 'Cluster', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
+
 ```
 
 ### Write out sentiment data
 ```{r}
-write.csv(df, 'sentiment.csv')
+#write.csv(df, 'sentiment.csv')
 ```
 

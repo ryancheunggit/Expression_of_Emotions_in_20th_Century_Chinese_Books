@@ -2,6 +2,13 @@
 Ryan Cheung  
 Thursday, August 07, 2014  
 
+```r
+library(ggplot2)
+library(ggthemes)
+theme_set(theme_minimal(12))
+library(RColorBrewer)
+```
+
 ## Load in data 读入数据
 
 ```r
@@ -45,32 +52,116 @@ names(df)[8] <- 'Cluster'
 情绪差值的标准值图：
 
 ```r
-library(ggplot2)
-ggplot(df, aes(x = Year, y = MZ))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZ))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size = 1,
+              color = 'black',
+              alpha = 0.3)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_line(aes(alpha = 0.3))+
+  labs(title = "二十世纪中文图书中总体情感值走势", x= "年份", y = "情感值")
 ```
 
-![plot of chunk Emotion](./EmotionTrend_files/figure-html/Emotion.png) 
+![](EmotionTrend_files/figure-html/Emotion-1.png) 
+
+
+```r
+ggplot(df, aes(x = Year, y = MZ))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size = 1,
+              color = 'black',
+              alpha = 0.3)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = 'Cluster', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_line(aes(alpha = 0.3))+
+  labs(title = "Expression of Emotion in 20 Century Chinese Books", x= "Year", y = "Emotion(Zscore)")
+```
+
+![](EmotionTrend_files/figure-html/unnamed-chunk-4-1.png) 
 
 
 正面情感词各年频次：
 
 ```r
-ggplot(df, aes(x = Year, y = MZPOS))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZPOS))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size =1,
+              color = 'black',
+              alpha = 0.1)+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  labs(title = "二十世纪中文图书中积极情感值走势", x= "年份", y = "积极情感值（标准值）")
 ```
 
-![plot of chunk Pos](./EmotionTrend_files/figure-html/Pos.png) 
+![](EmotionTrend_files/figure-html/Pos-1.png) 
+
+
+```r
+ggplot(df, aes(x = Year, y = MZPOS))+ 
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size =1,
+              color = 'black',
+              alpha = 0.1)+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = 'Cluster', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+  labs(title = "Positive Emotion in 20 Century Chinese Books", x= "Year", y = "Positive Emotion(Zscore)")
+```
+
+![](EmotionTrend_files/figure-html/unnamed-chunk-5-1.png) 
+
 
 负面情感词各年频次：
 
 ```r
-ggplot(df, aes(x = Year, y = MZNEG))+ stat_smooth(method = "lm", formula = y~x, size =1, color = 'black', alpha = 0.1)+ geom_point(aes(color = factor(Cluster),size = 5))+ labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
+ggplot(df, aes(x = Year, y = MZNEG))+ 
+  stat_smooth(method = "loess", 
+              formula = y~x, 
+              size =1, 
+              color = 'black', 
+              alpha = 0.1)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  labs(title = "二十世纪中文图书中消极情感值走势", x= "年份", y = "消极情感值（标准值）")
 ```
 
-![plot of chunk Neg](./EmotionTrend_files/figure-html/Neg.png) 
+![](EmotionTrend_files/figure-html/Neg-1.png) 
+
+
+
+```r
+ggplot(df, aes(x = Year, y = MZNEG))+ 
+  stat_smooth(method = "loess", 
+              formula = y~x, 
+              size =1, 
+              color = 'black', 
+              alpha = 0.1)+ 
+  geom_point(aes(color = factor(Cluster),size = 5))+ 
+    scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = 'Cluster', reverse = T,
+    override.aes = list(alpha = 1, size = 5)))+
+  labs(title = "Negitive Emotion in 20 Century Chinese Books", x= "Year", y = "Negitive Emotion(Zscore)")
+```
+
+![](EmotionTrend_files/figure-html/unnamed-chunk-6-1.png) 
 
 ### Write out sentiment data
 
 ```r
-write.csv(df, 'sentiment.csv')
+#write.csv(df, 'sentiment.csv')
 ```
 

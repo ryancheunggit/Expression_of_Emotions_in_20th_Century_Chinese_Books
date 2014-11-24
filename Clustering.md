@@ -2,6 +2,13 @@
 Ryan Cheung  
 Thursday, August 15, 2014  
 
+```r
+library(ggplot2)
+library(ggthemes)
+theme_set(theme_minimal(12))
+library(RColorBrewer)
+```
+
 ## Load in data 读入数据
 
 ```r
@@ -13,10 +20,21 @@ negdf <- read.csv("negdf.csv", stringsAsFactors = F, header = T)
 ## General Usage of Emotion Words
 
 ```r
-plot((rowSums(negdf[,2:101]) + rowSums(posdf[,2:101]))/total[,3], pch = 19,type = 'p')
+x = (rowSums(negdf[,2:101]) + rowSums(posdf[,2:101]))/total[,3]
+totalScore <- as.data.frame(x)
+totalScore$y <- seq(1900:2000)
+ggplot(aes(x = y, y = x), data = totalScore)+
+  geom_point(aes(size = 5)) +
+  stat_smooth(method = "loess",
+              formula = y~x,
+              size = 1,
+              color = 'black',
+              alpha = 0.3)+
+  geom_line(aes(alpha = 0.3))+
+  labs(title = "情感词语总使用频次走势", x= "年份", y = "使用频次")
 ```
 
-![plot of chunk GTrend](./Clustering_files/figure-html/GTrend.png) 
+![](Clustering_files/figure-html/GTrend-1.png) 
 
 
 ## Creating DataFrame
@@ -38,16 +56,16 @@ clusterIntensity = hclust(distance, method="ward.D")
 plot(clusterIntensity)
 ```
 
-![plot of chunk HIC](./Clustering_files/figure-html/HIC.png) 
+![](Clustering_files/figure-html/HIC-1.png) 
 
 ### Select 5 Cluster in HC
 
 ```r
-plot(clusterIntensity)
+plot(clusterIntensity, labels = F, axes = F, xlab = "距离", ylab = "高度", main = "层次聚类系统树图", ann = T)
 rect.hclust(clusterIntensity, k = 5, border = "red")
 ```
 
-![plot of chunk HIC5](./Clustering_files/figure-html/HIC5.png) 
+![](Clustering_files/figure-html/HIC5-1.png) 
 
 ```r
 YearCluster = cutree(clusterIntensity, k = 5)
@@ -74,17 +92,29 @@ YearCluster
 ### Plot the clusters
 
 ```r
-library(ggplot2)
 Clusters <- as.data.frame(cbind(row.names(total), YearCluster))
 names(Clusters) <- c('Year','Cluster')
 Clusters$Cluster <- as.factor(Clusters$Cluster)
-ggplot(Clusters, aes(x = Year, y = Cluster, color = Cluster, size = 3)) + geom_point()
+Clusters$Year <- seq(1900,2000)
+ggplot(Clusters, aes(x = Year, y = Cluster, color = Cluster, size = 3)) +
+  geom_point() +
+  scale_color_brewer(type = 'qual',
+    guide = guide_legend(title = '聚集', reverse = T,
+    override.aes = list(alpha = 1, size = 5))) +
+  labs(title = "聚集和所属年份", x= "年份", y = "所属聚集") +
+  scale_x_continuous(breaks = seq(1900,2000,10)) +
+  scale_y_discrete(breaks = NULL)
 ```
 
-![plot of chunk Cluster](./Clustering_files/figure-html/Cluster.png) 
+![](Clustering_files/figure-html/Cluster-1.png) 
 
 ### Write the Clusters to File
 
 ```r
-write.csv(Clusters, file = "Clusters.csv", row.names = F)
+#write.csv(Clusters, file = "Clusters.csv", row.names = F)
 ```
+
+
+
+
+
