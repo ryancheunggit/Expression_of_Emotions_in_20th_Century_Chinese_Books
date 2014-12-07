@@ -115,3 +115,5 @@ sql shell> \q
 cmd> mysql -u root -p < "path/loadsentiment2001-2008.txt"
 cmd> mysql -u root -p < "path/negsum2001-2008.txt" > "path/negsentiment2001-2008.txt"                   
 cmd> mysql -u root -p < "path/possum2001-2008.txt" > "path/possentiment2001-2008.txt"
+
+###todo : 每个聚集究竟有什么特质？
