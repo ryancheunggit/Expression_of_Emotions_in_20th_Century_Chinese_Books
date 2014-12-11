@@ -66,6 +66,12 @@ YearCluster
 ```{r Cluster, warning = F}
 Clusters <- as.data.frame(cbind(row.names(total), YearCluster))
 names(Clusters) <- c('Year','Cluster')
+Clusters$Cluster <- as.numeric(Clusters$Cluster)
+for (i in 1:101){
+  if (Clusters$Cluster[i] == 1) Clusters$Cluster[i] = 3
+  else if (Clusters$Cluster[i] == 2) Clusters$Cluster[i] = 1
+  else if (Clusters$Cluster[i] == 3) Clusters$Cluster[i] = 2
+}
 Clusters$Cluster <- as.factor(Clusters$Cluster)
 Clusters$Year <- seq(1900,2000)
 ggplot(Clusters, aes(x = Year, y = Cluster, color = Cluster, size = 3)) +
@@ -80,10 +86,22 @@ ggplot(Clusters, aes(x = Year, y = Cluster, color = Cluster, size = 3)) +
 
 ### Write the Clusters to File
 ```{r}
-#write.csv(Clusters, file = "Clusters.csv", row.names = F)
+write.csv(Clusters, file = "Clusters.csv", row.names = F)
 ```
 
 
+```{r}
+c1 = subset(df, Clusters$Cluster == 1)
+c2 = subset(df, Clusters$Cluster == 2)
+c3 = subset(df, Clusters$Cluster == 3)
+c4 = subset(df, Clusters$Cluster == 4)
+c5 = subset(df, Clusters$Cluster == 5)
+names(sort(colSums(c1), decreasing = T)[1:50])
+names(sort(colSums(c2), decreasing = T)[1:50])
+names(sort(colSums(c3), decreasing = T)[1:50])
+names(sort(colSums(c4), decreasing = T)[1:50])
+names(sort(colSums(c5), decreasing = T)[1:50])
+```
 
 
 
