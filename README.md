@@ -4,7 +4,7 @@ to do:
 residual plot of negative and positive scores
    
 
-![情感变化图](./EmotionTrend_files/figure-html/Emotion.png) 
+![情感变化图](./EmotionTrend_files/figure-html/Emotion-1.png) 
 
 两个消极情感的主要时间段（即标准化的总体情感分值小于零）为：          
 1901年至1920年以及1969年至1985年，总体情感值在1975年前后达到底谷并随后逐年回升，该底谷对应于“文革”的结束             两个积极情感（即标准化的总体情感分值大于零）的主要时间段为：       
